@@ -10,9 +10,9 @@ body  {
   box-sizing: border-box;
 }
 
-.otl  {
+/* .otl  {
   outline: 1px solid red;
-}
+} */
 
 h1,
 h2,
@@ -124,4 +124,7 @@ a:hover {
   margin: 0px auto 20px auto;
   width: 750px;
   min-height: 200px;
+  border: 1px solid #ff6e6e;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
