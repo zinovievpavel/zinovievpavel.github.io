@@ -1,48 +1,11 @@
-body  {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  min-width: 1000px;
-  background-color: #ededed;
-
-  font-family: 'Comfortaa', sans-serif;
-
-  box-sizing: border-box;
-}
-
-/* .otl  {
+.otl  {
   outline: 1px solid red;
-} */
-
-h1,
-h2,
-h3,
-p {
-  margin: 5px;
 }
 
-a:link {
-    text-decoration: none; /* Убирает подчеркивание для ссылок */
-    color: inherit;
-   }
 
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:active {
-  text-decoration: none;
-
-}
-
-a:hover {
-    text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
-    color: #ff6e6e;
-  }
 
 .main_page  {
-  width: 1000px;
+  width: 900px;
   min-height: 1200px;
   margin: 0px auto 0px auto;
   padding-top: 50px;
@@ -116,15 +79,31 @@ a:hover {
 .hobby_container  {
   padding-top: 20px;
   margin: 100px auto 0px auto;
-  width: 80%;
+  width: 800px;
   min-height: 500px;
 }
 
 .hobby  {
   margin: 0px auto 20px auto;
   width: 750px;
-  min-height: 200px;
-  border: 1px solid #ff6e6e;
+  height: 300px;
+  /* border: 1px solid #ff6e6e; */
   border-radius: 2px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.hobby section  {
+  display: inline-block;
+}
+
+.hobby_pic  {
+  height: 300px;
+  width: 300px;
+}
+
+.hobby_description  {
+  max-height: 300px;
+  min-height: 200px;
+  width: 415px;
+  margin-left: 30px;
 }

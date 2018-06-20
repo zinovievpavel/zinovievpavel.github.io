@@ -1,0 +1,54 @@
+body  {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-width: 900px;
+  background-color: #ededed;
+
+  font-family: 'Comfortaa', sans-serif;
+
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 6px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2  {
+  font-size: 16px;
+}
+
+p {
+  font-size: 13px;
+}
+
+a {
+  font-size: 13px;
+}
+
+a:link {
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+  color: #ff6e6e;
+}
