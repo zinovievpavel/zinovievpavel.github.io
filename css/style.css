@@ -1,8 +1,7 @@
-.otl  {
+/* --- Для отображения границ блоков --- */
+/* .otl  {
   outline: 1px solid red;
-}
-
-
+} */
 
 .main_page  {
   width: 900px;
@@ -94,6 +93,7 @@
 
 .hobby section  {
   display: inline-block;
+  vertical-align: top;
 }
 
 .hobby_pic  {
@@ -102,8 +102,9 @@
 }
 
 .hobby_description  {
-  max-height: 300px;
-  min-height: 200px;
-  width: 415px;
+  margin: 20px;
+  max-height: 280px;
+  min-height: 180px;
+  width: 395px;
   margin-left: 30px;
 }

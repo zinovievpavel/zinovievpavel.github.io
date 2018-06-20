@@ -29,6 +29,8 @@ p {
   font-size: 13px;
 }
 
+/* === Стили ссылок === */
+
 a {
   font-size: 13px;
 }
@@ -51,4 +53,14 @@ a:active {
 a:hover {
   text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
   color: #ff6e6e;
+}
+
+.btn  {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid red;
+  border-radius: 3px;
+
+  min-width: 100px;
+
 }
