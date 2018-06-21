@@ -10,8 +10,8 @@ body  {
   box-sizing: border-box;
 }
 
-.container  {
-  width: 1200px;
+.main_container  {
+  width: 1100px;
   margin: 0px auto 0px auto;
 }
 
@@ -80,4 +80,5 @@ a:hover {
 
 .main_footer  {
   background-color: white;
+  width: inherit;
 }

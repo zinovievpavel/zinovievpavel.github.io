@@ -81,6 +81,10 @@
 
 }
 
+.cart_link  {
+  font-size: 13px;
+}
+
 /* === Стили карточек Тем === */
 
 .topic_container  {
