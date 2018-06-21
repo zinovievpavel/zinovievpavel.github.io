@@ -1,11 +1,11 @@
 /* --- Для отображения границ блоков --- */
-/* .otl  {
-  outline: 1px solid red;
-} */
+  /* .otl  {
+    outline: 1px solid red;
+  } */
 
-.main_page  {
-  width: 900px;
-  min-height: 1200px;
+.main_content  {
+  width: 1100px;
+  min-height: 1100px;
   margin: 0px auto 0px auto;
   padding-top: 50px;
   background-color: white;
@@ -14,9 +14,15 @@
   align-items: center; */
 }
 
+.center_content {
+  margin: 0px 80px 0px 80px;
+}
+
+/* === Стили визитки === */
+
 .card {
   width: 450px;
-  min-height: 220px;
+  min-height: 180px;
 
   padding: 20px;
   margin: 0px auto 0px auto;
@@ -63,8 +69,8 @@
   overflow: hidden;
 
   flex-grow: 1;
-  max-height: 110px;
-  max-width: 110px;
+  max-height: 80px;
+  max-width: 80px;
 }
 
 .card_data {
@@ -75,36 +81,54 @@
 
 }
 
-.hobby_container  {
+/* === Стили карточек Тем === */
+
+.topic_container  {
   padding-top: 20px;
   margin: 100px auto 0px auto;
-  width: 800px;
+  width: 700px;
   min-height: 500px;
 }
 
-.hobby  {
-  margin: 0px auto 20px auto;
-  width: 750px;
-  height: 300px;
-  /* border: 1px solid #ff6e6e; */
+.topic  {
+  margin: 20px auto 20px auto;
+  width: 100%;
+  height: 250px;
+  border-right: 2px solid #ff6e6e;
   border-radius: 2px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
-.hobby section  {
+.topic section  {
   display: inline-block;
   vertical-align: top;
 }
 
-.hobby_pic  {
-  height: 300px;
-  width: 300px;
+.topic_pic  {
+  height: 250px;
+  width: 250px;
 }
 
-.hobby_description  {
+.topic_description  {
   margin: 20px;
   max-height: 280px;
   min-height: 180px;
-  width: 395px;
+  width: 380px;
   margin-left: 30px;
+}
+
+.topic_header_container {
+  height: 30px;
+}
+
+.topic_text_container {
+  height: 130px;
+}
+
+.topic_btn_container {
+  margin-left: 99px
+}
+
+.topic_btn_container .btn {
+  margin-left: 20px;
 }

@@ -2,12 +2,17 @@ body  {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  min-width: 900px;
+  min-width: 1100px;
   background-color: #ededed;
 
   font-family: 'Comfortaa', sans-serif;
 
   box-sizing: border-box;
+}
+
+.container  {
+  width: 1200px;
+  margin: 0px auto 0px auto;
 }
 
 h1,
@@ -18,21 +23,21 @@ p {
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h2  {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* === Стили ссылок === */
 
 a {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 a:link {
@@ -58,9 +63,21 @@ a:hover {
 .btn  {
   display: inline-block;
   padding: 8px;
-  border: 1px solid red;
+  border: 1px solid #ff6e6e;
   border-radius: 3px;
-
+  background-color: white;
   min-width: 100px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  font-size: 13px;
+  text-align: center;
+}
 
+.btn:hover  {
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 0 3px #ff6e6e;
+}
+
+.main_footer  {
+  background-color: white;
 }
