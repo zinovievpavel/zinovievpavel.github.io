@@ -1,7 +1,7 @@
 /* === Для отображения границ блоков === */
-  /* .otl  {
+  .otl  {
     outline: 1px solid red;
-  } */
+  }
 
 .main_content  {
   width: 1100px;
