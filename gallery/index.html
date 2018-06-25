@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/gallery_style.css">
     <link rel="stylesheet" href="../lightbox/css/lightbox.min.css">
     <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64 100x100" href="../favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
   </head>
   <body>
     <div class="main_container">
@@ -23,60 +23,55 @@
       </header>
       <main class="main_content">
         <div class="container">
+          <div id="gallery">
 
-    <h1>Amazing Photo Gallery</h1>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="../gallery/preview/img-01-min.jpg" alt="Eagle" /></a>
+                  <figcaption>Eagle</figcaption>
+              </figure>
 
-    <div id="gallery">
+              <figure class="photo">
+                  <a href="../gallery/originals/img-02.jpg" data-lightbox="roadtrip" data-title="Pasta"><img src="../gallery/preview/img-02-min.jpg" alt="Pasta" /></a>
+                  <figcaption>Pasta</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="../gallery/preview/img-01-min.jpg" alt="Eagle" /></a>
-            <figcaption>Eagle</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-03.jpg" data-lightbox="roadtrip" data-title="Squash"><img src="../gallery/preview/img-03-min.jpg" alt="Squash" /></a>
+                  <figcaption>Squash</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-02.jpg" data-lightbox="roadtrip" data-title="Pasta"><img src="../gallery/preview/img-02-min.jpg" alt="Pasta" /></a>
-            <figcaption>Pasta</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-04.jpg" data-lightbox="roadtrip" data-title="Hills"><img src="../gallery/preview/img-04-min.jpg" alt="Hills" /></a>
+                  <figcaption>Hills</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-03.jpg" data-lightbox="roadtrip" data-title="Squash"><img src="../gallery/preview/img-03-min.jpg" alt="Squash" /></a>
-            <figcaption>Squash</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-05.jpg" data-lightbox="roadtrip" data-title="Sandwiches"><img src="../gallery/preview/img-05-min.jpg" alt="Sandwiches" /></a>
+                  <figcaption>Sandwiches</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-04.jpg" data-lightbox="roadtrip" data-title="Hills"><img src="../gallery/preview/img-04-min.jpg" alt="Hills" /></a>
-            <figcaption>Hills</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-06.jpg" data-lightbox="roadtrip" data-title="Plums"><img src="../gallery/preview/img-06-min.jpg" alt="Plums" /></a>
+                  <figcaption>Plums</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-05.jpg" data-lightbox="roadtrip" data-title="Sandwiches"><img src="../gallery/preview/img-05-min.jpg" alt="Sandwiches" /></a>
-            <figcaption>Sandwiches</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-07.jpg" data-lightbox="roadtrip" data-title="Grape"><img src="../gallery/preview/img-07-min.jpg" alt="Grape" /></a>
+                  <figcaption>Grape</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-06.jpg" data-lightbox="roadtrip" data-title="Plums"><img src="../gallery/preview/img-06-min.jpg" alt="Plums" /></a>
-            <figcaption>Plums</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-08.jpg" data-lightbox="roadtrip" data-title="Silhouette"><img src="../gallery/preview/img-08-min.jpg" alt="Silhouette" /></a>
+                  <figcaption>Silhouette</figcaption>
+              </figure>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-07.jpg" data-lightbox="roadtrip" data-title="Grape"><img src="../gallery/preview/img-07-min.jpg" alt="Grape" /></a>
-            <figcaption>Grape</figcaption>
-        </figure>
+              <figure class="photo">
+                  <a href="../gallery/originals/img-09.jpg" data-lightbox="roadtrip" data-title="Night"><img src="../gallery/preview/img-09-min.jpg" alt="Night" /></a>
+                  <figcaption>Night</figcaption>
+              </figure>
+            </div>
+          </div>
 
-        <figure class="photo">
-            <a href="../gallery/originals/img-08.jpg" data-lightbox="roadtrip" data-title="Silhouette"><img src="../gallery/preview/img-08-min.jpg" alt="Silhouette" /></a>
-            <figcaption>Silhouette</figcaption>
-        </figure>
-
-        <figure class="photo">
-            <a href="../gallery/originals/img-09.jpg" data-lightbox="roadtrip" data-title="Night"><img src="../gallery/preview/img-09-min.jpg" alt="Night" /></a>
-            <figcaption>Night</figcaption>
-        </figure>
-
-    </div>
-</div>
-
-<script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
       <footer class="main_footer">
         <a href="#" target="_blank">vkontakte</a>
         <a href="#" target="_blank">telegram</a>
@@ -84,5 +79,6 @@
         <a href="#" target="_blank">instagram</a>
       </footer>
     </div>
+    <script src="../lightbox/js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

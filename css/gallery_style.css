@@ -23,7 +23,6 @@
     display: block;
     max-width: 100%;
     height: auto;
-
     box-sizing: border-box;
 }
 
@@ -71,6 +70,7 @@ h1 {
 #gallery {
     margin-bottom: 60px;
 }
+
 #gallery:after {
    content: '';
    display: block;
