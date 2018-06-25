@@ -10,9 +10,6 @@
   margin: 0px auto 0px auto;
   padding-top: 50px;
   background-color: white;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .center_content {
@@ -134,7 +131,7 @@
   width: inherit;
 }
 
-.promo_btn_container .btn {
+.promo_btn_container .btn_1 {
   margin-left: 20px;
   float: right;
 }
