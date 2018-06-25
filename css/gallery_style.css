@@ -27,12 +27,12 @@
 }
 
 .photo a:hover {
-		border-bottom: 3px solid red;
+		border-bottom: 3px solid #ff6e6e;
 }
 
 .photo a {
     display: block;
-		border-bottom: 3px solid #eee;
+		border-bottom: 3px solid white;
     position: relative;
 }
 
