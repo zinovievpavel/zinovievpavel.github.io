@@ -135,7 +135,7 @@ a:hover {
 
 .btn_1:hover  {
     text-decoration: none;
-    color: inherit;
+    color: #ff6e6e;
     border: 1px solid #ff6e6e;
     border-radius: 3px;
     box-shadow: 0 0 3px #ff6e6e;
