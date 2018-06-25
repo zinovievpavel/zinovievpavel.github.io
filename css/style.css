@@ -112,22 +112,26 @@
 }
 
 .promo_description  {
+  position: relative;
   margin: 20px;
-  max-height: 200px;
-  min-height: 150px;
+  height: 185px;
   width: 400px;
   margin-left: 30px;
 }
 
 .promo_header_container {
-  height: 30px;
+  min-height: 30px;
 }
 
 .promo_text_container {
-  height: 115px;
+  max-height: 100px;
+  max-height: 150px;
+  /* margin-top: 20px; */
 }
 
 .promo_btn_container {
+  position: absolute;
+  bottom: 0px;
   width: inherit;
 }
 
