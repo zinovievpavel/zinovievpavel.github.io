@@ -14,7 +14,7 @@
 
 .photo {
 	float: left;
-  width: 33.333333%;
+  width: 25%;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -49,6 +49,7 @@
     right: 0;
     visibility: hidden;
 }
+
 .photo:hover> a:after {
     visibility: visible;
 } */
