@@ -23,7 +23,7 @@
   min-height: 180px;
 
   padding: 20px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 80px auto;
 
   background: #fff;
   border-bottom: 2px solid #ff6e6e;
@@ -86,8 +86,8 @@
 /* === Стили карточек Тем === */
 
 .promo_container  {
-  padding-top: 20px;
-  margin: 100px auto 0px auto;
+  padding-top: 0px;
+  margin: 0px auto 0px auto;
   width: 700px;
   min-height: 500px;
 }
