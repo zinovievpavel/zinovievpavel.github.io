@@ -1,14 +1,14 @@
 /* === Для отображения границ блоков === */
-  .otl  {
+  /* .otl  {
     outline: 1px solid red;
-  }
+  } */
 
 .main_content  {
   width: 100%;
   min-height: 1200px;
   margin: 0px auto 0px auto;
   padding-top: 50px;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .center_content {
@@ -90,15 +90,18 @@
 
 .promo_container  {
   padding-top: 0px;
-  margin: 0px auto 0px auto;
-  width: 680px;
+  /* margin: 0px auto 0px auto; */
+  float: left;
+  margin-left: 80px;
+  width: 700px;
   min-height: 500px;
 }
 
 .promo  {
+  background-color: white;
   margin: 20px auto 40px auto;
   width: 100%;
-  height: 230px;
+  height: 200px;
   border-right: 2px solid #ff6e6e;
   border-radius: 2px;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
@@ -110,15 +113,15 @@
 }
 
 .promo_pic  {
-  height: 230px;
-  width: 230px;
+  height: 200px;
+  width: 200px;
 }
 
 .promo_description  {
   position: relative;
   margin: 20px;
-  height: 185px;
-  width: 380px;
+  height: 160px;
+  width: 430px;
   margin-left: 30px;
 }
 
@@ -141,4 +144,33 @@
 .promo_btn_container .btn_1 {
   margin-left: 20px;
   float: right;
+}
+
+/* === Стили карточки справа === */
+
+.promo_aside_container  {
+  float: right;
+  margin-right: 80px;
+  width: 250px;
+}
+
+.promo_aside  {
+  background-color: white;
+  margin-top: 20px;
+  border-top: 2px solid #ff6e6e;
+  border-bottom: 2px solid #ff6e6e;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  min-height: 435px;
+  padding: 10px 10px 10px 10px;
+}
+
+.promo_aside a  {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  /* border: 1px solid #ff6e6e; */
+  box-shadow: 0 0 1px rgba(255,110,110,0.8);
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
