@@ -1,7 +1,7 @@
 /* === Для отображения границ блоков === */
-  /* .otl  {
+  .otl  {
     outline: 1px solid red;
-  } */
+  }
 
 .main_content  {
   width: 1200px;
@@ -13,10 +13,14 @@
 }
 
 .center_content {
-  margin: 0px 80px 0px 80px;
+  /* margin: 0px 80px 0px 80px; */
 }
 
 /* === Стили визитки === */
+
+.card_container {
+  margin: 0 auto;
+}
 
 .card {
   width: 450px;
