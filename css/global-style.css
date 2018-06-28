@@ -1,8 +1,7 @@
 body  {
   margin: 0px;
   padding: 0px;
-  /* min-width: 1200px;
-  max-width: 100%; */
+  max-width: 100%;
   background-color: #ededed;
   background-image: url("../img/background_pattern_1.jpg");
 

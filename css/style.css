@@ -1,7 +1,7 @@
 /* === Для отображения границ блоков === */
-  /* .otl  {
+  .otl  {
     outline: 1px solid red;
-  } */
+  }
 
 .main_content  {
   width: 100%;
@@ -91,7 +91,7 @@
 .promo_container  {
   padding-top: 0px;
   margin: 0px auto 0px auto;
-  width: 700px;
+  width: 680px;
   min-height: 500px;
 }
 
@@ -118,7 +118,7 @@
   position: relative;
   margin: 20px;
   height: 185px;
-  width: 400px;
+  width: 380px;
   margin-left: 30px;
 }
 
