@@ -1,11 +1,10 @@
 /* === Для отображения границ блоков === */
-  .otl  {
+  /* .otl  {
     outline: 1px solid red;
-  }
+  } */
 
 .main_content  {
-  min-width: 1000px;
-  max-width: 100%;
+  width: 100%;
   min-height: 1200px;
   margin: 0px auto 0px auto;
   padding-top: 50px;
