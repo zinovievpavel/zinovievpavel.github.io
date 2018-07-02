@@ -150,14 +150,15 @@
   float: right;
 }
 
-/* === Стили карточки справа === */
-
+/* === Стили блока справа === */
+/* Контейнер */
 .promo_aside_container  {
   float: left;
   margin-left: 90px;
   width: 250px;
 }
 
+/* Сам блок */
 .promo_aside  {
   background-color: white;
   margin-top: 20px;
@@ -169,10 +170,12 @@
   padding: 10px 10px 10px 10px;
 }
 
+/* Стили блока при наведении */
 .promo_aside:hover  {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+/* Стили ссылок в блоке */
 .promo_aside a  {
   display: block;
   width: 87%;
@@ -188,18 +191,21 @@
   line-height: 1.6;
 }
 
+/* Стили ссылок у блоке при наведении */
 .promo_aside a:hover  {
   text-decoration: none;
-  background-color: rgba(255,110,110,0.05);
+  background-color: rgba(255,110,110,0.03);
   /* font-weight: bold; */
   /* box-shadow: 0 0 3px rgba(255,110,110,1); */
   border: 1px solid rgba(255,110,110,0.8);
 }
 
+/* Стиль поперечной линии в блоке ссылоки */
 .promo_aside hr  {
   border: 0.5px solid rgba(255,110,110,0.3);
 }
 
+/* Стиль текста под поперечной линией */
 .promo_aside_disclaimer {
   color: #8c8c8c;
   font-size: 9.5px;
