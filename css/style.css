@@ -4,29 +4,29 @@
   } */
 
 .main_content  {
-  width: 1200px;
+  width: 100%;
   min-height: 1200px;
-  max-width: 1200px;
   margin: 0px auto 0px auto;
   padding-top: 50px;
-  background-color: white;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  /* background-color: white; */
 }
 
 .center_content {
-  margin: 0px 80px 0px 80px;
+  /* margin: 0px 80px 0px 80px; */
 }
 
 /* === Стили визитки === */
+
+.card_container {
+  margin: 0 auto;
+}
 
 .card {
   width: 450px;
   min-height: 180px;
 
   padding: 20px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 80px auto;
 
   background: #fff;
   border-bottom: 2px solid #ff6e6e;
@@ -42,10 +42,10 @@
   align-content: space-between;
 }
 
-/* .card:hover {
-  transition: 0.05s;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-} */
+.card:hover {
+  /* transition: 0.05s; */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 
 .card_item  {
 
@@ -89,19 +89,26 @@
 /* === Стили карточек Тем === */
 
 .promo_container  {
-  padding-top: 20px;
-  margin: 100px auto 0px auto;
+  padding-top: 0px;
+  /* margin: 0px auto 0px auto; */
+  float: left;
+  margin-left: 80px;
   width: 700px;
   min-height: 500px;
 }
 
 .promo  {
+  background-color: white;
   margin: 20px auto 40px auto;
   width: 100%;
-  height: 230px;
+  height: 200px;
   border-right: 2px solid #ff6e6e;
   border-radius: 2px;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+.promo:hover  {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .promo section  {
@@ -110,31 +117,91 @@
 }
 
 .promo_pic  {
-  height: 230px;
-  width: 230px;
+  height: 200px;
+  width: 200px;
 }
 
 .promo_description  {
+  position: relative;
   margin: 20px;
-  max-height: 200px;
-  min-height: 150px;
-  width: 400px;
+  height: 160px;
+  width: 430px;
   margin-left: 30px;
 }
 
 .promo_header_container {
-  height: 30px;
+  min-height: 30px;
 }
 
 .promo_text_container {
-  height: 115px;
+  max-height: 100px;
+  max-height: 150px;
+  /* margin-top: 20px; */
 }
 
 .promo_btn_container {
+  position: absolute;
+  bottom: 0px;
   width: inherit;
 }
 
-.promo_btn_container .btn {
+.promo_btn_container .btn_1 {
   margin-left: 20px;
   float: right;
+}
+
+/* === Стили карточки справа === */
+
+.promo_aside_container  {
+  float: left;
+  margin-left: 90px;
+  width: 250px;
+}
+
+.promo_aside  {
+  background-color: white;
+  margin-top: 20px;
+  border-top: 2px solid #ff6e6e;
+  border-bottom: 2px solid #ff6e6e;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  min-height: 435px;
+  padding: 10px 10px 10px 10px;
+}
+
+.promo_aside:hover  {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.promo_aside a  {
+  display: block;
+  width: 87%;
+  min-height: 10px;
+  border: 1px solid rgba(255,110,110,0.3);
+  /* box-shadow: 0 0 1px rgba(255,110,110,0.8); */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+
+  color: black;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.promo_aside a:hover  {
+  text-decoration: none;
+  background-color: rgba(255,110,110,0.05);
+  /* font-weight: bold; */
+  /* box-shadow: 0 0 3px rgba(255,110,110,1); */
+  border: 1px solid rgba(255,110,110,0.8);
+}
+
+.promo_aside hr  {
+  border: 0.5px solid rgba(255,110,110,0.3);
+}
+
+.promo_aside_disclaimer {
+  color: #8c8c8c;
+  font-size: 9.5px;
+  line-height: 1.4;
 }
