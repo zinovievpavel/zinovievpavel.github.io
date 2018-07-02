@@ -149,8 +149,8 @@
 /* === Стили карточки справа === */
 
 .promo_aside_container  {
-  float: right;
-  margin-right: 80px;
+  float: left;
+  margin-left: 90px;
   width: 250px;
 }
 
@@ -169,18 +169,21 @@
   display: block;
   width: 91%;
   min-height: 10px;
-  /* border: 1px solid #ff6e6e; */
-  box-shadow: 0 0 1px rgba(255,110,110,0.8);
+  border: 1px solid rgba(255,110,110,0.3);
+  /* box-shadow: 0 0 1px rgba(255,110,110,0.8); */
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 10px;
 
   color: black;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.3;
 }
 
 .promo_aside a:hover  {
   text-decoration: none;
-  box-shadow: 0 0 3px rgba(255,110,110,1);
+  background-color: rgba(255,110,110,0.05);
+  /* font-weight: bold; */
+  /* box-shadow: 0 0 3px rgba(255,110,110,1); */
+  border: 1px solid rgba(255,110,110,0.8);
 }
