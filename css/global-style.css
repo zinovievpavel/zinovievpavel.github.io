@@ -42,6 +42,7 @@ p {
   margin: 0px auto 0px auto;
   /* padding-top: 20px; */
   background-color: white;
+  box-shadow: 0 0 80px rgba(0,0,0,0.15);
 }
 
 /* === Стили главного хедера === */
