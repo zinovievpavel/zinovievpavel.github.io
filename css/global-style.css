@@ -16,18 +16,40 @@ p {
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 h2  {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.3;
 }
 
+/* === Стили параграфов === */
+/* --- Стилизация блока с параграфами (красная линия слева) --- */
+.pg_text_container  {
+  padding: 10px 10px;
+  border-left: 3px solid #ff6e6e;
+}
+
+ /* --- Стиль текста в параграфах ---  */
+.pg_text  {
+  font-size: 14px;
+  line-height: 1.4;
+  text-indent: 1em;
+}
+
+ /* --- Стиль первой буквы в параграфах ---  */
+.pg_text:first-letter {
+  font-size: 1.15em;
+  color: #ff6e6e;
+  font-weight: bold;
+}
+
+/* === Псевдораспорка от флоатов === */
 .clearfix::after {
   content: "";
   display: table;
@@ -37,10 +59,11 @@ p {
 .main_wrapper  {
   min-width: 1000px;
   max-width: 1200px;
+  min-height: 500px;
   margin: 0px auto 0px auto;
   /* padding-top: 20px; */
   background-color: white;
-  box-shadow: 0 0 80px rgba(0,0,0,0.15);
+  /* box-shadow: 0 0 80px rgba(0,0,0,0.15); */
 }
 
 /* === Стили главного хедера === */
@@ -74,12 +97,17 @@ p {
   border-bottom: 2px solid #ff6e6e;
 }
 
-
+.main_content  {
+  width: 100%;
+  min-height: 500px;
+  margin: 0px auto 0px auto;
+  padding-top: 50px;
+  /* background-color: white; */
+}
 
 /* === Стили ссылок === */
-
 a {
-  font-size: 15px;
+  font-size: 14px;
   color: #ff6e6e;
 }
 
@@ -110,7 +138,7 @@ a:hover {
   background-color: white;
   min-width: 80px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  font-size: 12px;
+  font-size: 13px;
   color: black;
   text-align: center;
 }
@@ -131,7 +159,7 @@ a:hover {
   background-color: #ff6e6e;
   min-width: 80px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  font-size: 12px;
+  font-size: 13px;
   color: white;
   text-align: center;
 }
@@ -168,11 +196,11 @@ a:hover {
 }
 
 /* === Стили главного футера === */
-
 .main_footer  {
   background-color: white;
   height: 50px;
   width: inherit;
+  border-bottom: 2px solid #ff6e6e;
 }
 
 .footer_link_container  {
@@ -181,4 +209,12 @@ a:hover {
 
 .footer_link  {
   display: inline;
+}
+
+
+/* Стили для врееменного блоков-заглушкек */
+.temp_block {
+  min-height: 50px;
+  width: 500px;
+  margin: 50px auto 50px auto;
 }
