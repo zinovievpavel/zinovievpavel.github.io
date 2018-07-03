@@ -42,7 +42,7 @@ body.lb-disable-scrolling {
   max-width:inherit;
   max-height:none;
   /* border-radius:3px; */
-  border-bottom: 5px solid #ff6e6e;
+  border-bottom: 2px solid #ff6e6e;
 }
 
 .lightbox a img {
@@ -59,7 +59,8 @@ body.lb-disable-scrolling {
   }
 
 .lb-loader,.lb-nav{
-    position:absolute;left:0
+    position:absolute;
+    left:0
 }
 
 .lb-outerContainer:after{
@@ -88,25 +89,49 @@ body.lb-disable-scrolling {
 }
 
 .lb-container>.nav  {
-    left:0
-  }
+  left:0
+}
 
 .lb-nav a{
-    outline:0;
-    background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+  outline:0;
+  background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
 
-}.lb-next, .lb-prev  {
+}
+
+.lb-next, .lb-prev  {
   height:100%;
   cursor:pointer;
   display:block
 }
 
 .lb-nav a.lb-prev {
-  width:34%;left:0;float:left;background:url(../images/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1
+  width:34%;
+  left:0;float:left;
+  background:url(../images/prev.png) left 48% no-repeat;
+  filter:alpha(Opacity=0);
+  opacity:0;
+  -webkit-transition:opacity .6s;
+  -moz-transition:opacity .6s;
+  -o-transition:opacity .6s;
+  transition:opacity .6s
+}
+
+.lb-nav a.lb-prev:hover {
+  filter:alpha(Opacity=100);
+  opacity:1
 }
 
 .lb-nav a.lb-next {
-  width:64%;right:0;float:right;background:url(../images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s
+  width:64%;
+  right:0;
+  float:right;
+  background:url(../images/next.png) right 48% no-repeat;
+  filter:alpha(Opacity=0);
+  opacity:0;
+  -webkit-transition:opacity .6s;
+  -moz-transition:opacity .6s;
+  -o-transition:opacity .6s;
+  transition:opacity .6s
 }
 
 .lb-nav a.lb-next:hover {

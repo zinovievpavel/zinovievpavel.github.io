@@ -173,6 +173,7 @@ a:hover {
   background-color: white;
   height: 50px;
   width: inherit;
+  border-bottom: 2px solid #ff6e6e;
 }
 
 .footer_link_container  {
