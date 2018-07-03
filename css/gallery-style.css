@@ -1,20 +1,33 @@
 .gallery_foreword {
   width: 900px;
   min-height: 50px;
-  margin: 0px auto 0px auto;
-  padding: 20px 10px;
+  margin: 20px auto 0px auto;
+  padding: 10px 10px;
+}
+
+.gallery_foreword p {
+  text-indent: 1em;
 }
 
 .gallery_container  {
+  width: 1000px;
+  min-height: 500px;
+  margin: 50px auto 50px auto;
+  padding-bottom: 50px;
+}
+
+.gallery_container h1 {
+  opacity: 0.6;
+  text-align: center;
+  margin: 10px;
+}
+
+.gallery  {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   align-content: flex-start;
-  width: 1000px;
-  min-height: 500px;
-  margin: 50px auto 50px auto;
-  padding-bottom: 50px;
 }
 
 .gallery_item {
