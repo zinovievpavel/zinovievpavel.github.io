@@ -44,16 +44,14 @@ p {
 }
 
 /* === Стили главного хедера === */
-
 .main_header  {
-  background-color:  white;
+  background-color: white;
   border-top: 1px solid white;
   width: 100%;
   min-height: 50px;
 }
 
 /* === Стили навигации === */
-
 .main_nav {
   height: 40px;
   width: 308px;
@@ -121,7 +119,7 @@ a:hover {
   text-decoration: none;
   color: inherit;
   box-shadow: 0 0 3px #ff6e6e;
-  background-color: #ffefef;
+  background-color: #fff7f7;
 }
 
 /* --- Кнопка тип 2 --- */

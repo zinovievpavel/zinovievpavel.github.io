@@ -1,0 +1,48 @@
+.gallery_foreword {
+  width: 900px;
+  min-height: 50px;
+  margin: 0px auto 0px auto;
+  padding: 20px 10px;
+}
+
+.gallery_container  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 1000px;
+  min-height: 500px;
+  margin: 50px auto 50px auto;
+  padding-bottom: 50px;
+}
+
+.gallery_item {
+  flex-flow: column;
+  width: 300px;
+  margin-top: 15px;
+}
+
+.gallery_item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.gallery_item a:hover {
+		border-bottom: 3px solid #ff6e6e;
+}
+
+.gallery_item a {
+    display: block;
+		border-bottom: 3px solid white;
+    position: relative;
+}
+
+.gallery_item figcaption {
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+  margin-top: 5px;
+}
