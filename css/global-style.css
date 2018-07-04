@@ -80,7 +80,7 @@ p {
   width: 308px;
   min-width: 500px;
   max-width: 1000px;
-  margin: 20px auto 0px auto;
+  margin: 10px auto 0px auto;
   text-align: center;
 }
 
@@ -101,7 +101,8 @@ p {
   width: 100%;
   min-height: 500px;
   margin: 0px auto 0px auto;
-  padding-top: 50px;
+  border-top: 1px solid white;
+  /* padding-top: 50px; */
   /* background-color: white; */
 }
 
