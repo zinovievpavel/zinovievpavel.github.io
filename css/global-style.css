@@ -200,6 +200,8 @@ a:hover {
   background-color: white;
   height: 50px;
   width: inherit;
+  margin-top: 50px;
+  border-top: 1px solid white;
   border-bottom: 2px solid #ff6e6e;
 }
 
