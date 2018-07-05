@@ -59,7 +59,7 @@ p {
 .main_wrapper  {
   min-width: 1000px;
   max-width: 1200px;
-  min-height: 800px;
+  min-height: 600px;
   margin: 0px auto 0px auto;
   /* padding-top: 20px; */
   background-color: white;
@@ -99,7 +99,7 @@ p {
 
 .main_content  {
   width: 100%;
-  min-height: 800px;
+  min-height: 80.5vh;
   margin: 0px auto 0px auto;
   border-top: 1px solid white;
   /* padding-top: 50px; */
@@ -199,18 +199,30 @@ a:hover {
 /* === Стили главного футера === */
 .main_footer  {
   background-color: white;
-  height: 50px;
+  height: 80px;
   width: inherit;
+  /* margin-top: 20px; */
+  border-top: 1px solid white;
   border-bottom: 2px solid #ff6e6e;
+}
+
+.main_footer_content  {
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  margin: 25px auto;
 }
 
 .footer_link_container  {
   display: inline;
+  vertical-align: middle;
+  margin-right: 2px;
+
 }
 
-.footer_link  {
+/* .footer_link  {
   display: inline;
-}
+} */
 
 
 /* Стили для врееменного блоков-заглушкек */
