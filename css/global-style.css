@@ -71,7 +71,7 @@ p {
   background-color: white;
   border-top: 1px solid white;
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
 }
 
 /* === Стили навигации === */
@@ -80,7 +80,7 @@ p {
   width: 308px;
   min-width: 500px;
   max-width: 1000px;
-  margin: 10px auto 0px auto;
+  margin: 20px auto 0px auto;
   text-align: center;
 }
 
