@@ -57,8 +57,8 @@ p {
 }
 
 .main_wrapper  {
-  min-width: 1000px;
-  max-width: 1200px;
+  min-width: 800px;
+  max-width: 1140px;
   min-height: 600px;
   margin: 0px auto 0px auto;
   /* padding-top: 20px; */
