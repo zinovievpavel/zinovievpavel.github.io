@@ -84,9 +84,7 @@
 
 .promo_container  {
   padding-top: 0px;
-  /* margin: 0px auto 0px auto; */
-  float: left;
-  margin-left: 90px;
+  margin: 0px auto 0px auto;
   margin-bottom: 30px;
   width: 700px;
   min-height: 500px;
@@ -145,6 +143,10 @@
   margin-left: 20px;
   float: right;
 }
+
+
+
+/* VVV aside блоки пока не используются для дальнейших разбирательств VVV */
 
 /* === Стили блока справа === */
 /* Контейнер */
