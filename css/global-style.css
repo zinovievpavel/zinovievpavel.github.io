@@ -134,17 +134,25 @@ a:hover {
 .btn  {
   display: inline-block;
   padding: 6px 12px 6px 12px;
-  border: 1px solid #ff6e6e;
-  border-radius: 3px;
-  background-color: white;
   min-width: 80px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
   font-size: 13px;
-  color: black;
   text-align: center;
 }
 
 .btn:hover  {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn_0  {
+  color: black;
+  border: 1px solid #ff6e6e;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.btn_0:hover  {
   text-decoration: none;
   color: inherit;
   box-shadow: 0 0 3px #ff6e6e;
@@ -153,7 +161,6 @@ a:hover {
 
 /* --- Кнопка тип 2 --- */
 .btn_1  {
-  display: inline-block;
   padding: 6px 12px 6px 12px;
   border: 1px solid #ff6e6e;
   border-radius: 3px;
@@ -166,13 +173,13 @@ a:hover {
 }
 
 .btn_1:hover  {
-    text-decoration: none;
-    color: #ff6e6e;
-    border: 1px solid #ff6e6e;
-    border-radius: 3px;
-    box-shadow: 0 0 3px #ff6e6e;
-    background-color: rgba(255,110,110,0.1);
-    transition: 0.08s;
+  text-decoration: none;
+  color: #ff6e6e;
+  border: 1px solid #ff6e6e;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #ff6e6e;
+  background-color: rgba(255,110,110,0.1);
+  transition: 0.08s;
 }
 
 .btn_2  {
@@ -187,10 +194,10 @@ a:hover {
 }
 
 .btn_2:hover  {
-    text-decoration: none;
-    color: #fff;
-    background-color: #89B9D0;
-    transition: 0.08s;
+  text-decoration: none;
+  color: #fff;
+  background-color: #89B9D0;
+  transition: 0.08s;
 }
 
 .g_btn  {
@@ -201,18 +208,18 @@ a:hover {
   background-color: #f2cc00;
   min-width: 80px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  font-size: 12px;
+  font-size: 13px;
   color: white;
   text-align: center;
 }
 
 .g_btn:hover  {
-    text-decoration: none;
-    color: #f2cc00;
-    border: 1px solid #f2cc00;
-    border-radius: 3px;
-    box-shadow: 0 0 10px #f2cc00;
-    background-color: white;
+  text-decoration: none;
+  color: #f2cc00;
+  border: 1px solid #f2cc00;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #f2cc00;
+  background-color: white;
 }
 
 /* === Стили главного футера === */

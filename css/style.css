@@ -1,7 +1,7 @@
 /* === Для отображения границ блоков === */
-  /* .otl  {
+  .otl  {
     outline: 1px solid blue;
-  } */
+  }
 
 
 .center_content {
@@ -29,7 +29,7 @@
 }
 
 .carde_header {
-  min-height: 30px;
+  min-height: 50px;
 }
 
 .carde_avatar_container {
@@ -119,6 +119,15 @@
   font-size: 13px;
 }
 
+.wall_bg  {
+  width: auto;
+  min-height: 600px;
+}
+
+.wall_bg img  {
+  overflow: hidden;
+}
+
 /* === Стили карточек Тем === */
 
 .promo_container  {
@@ -178,7 +187,7 @@
   width: inherit;
 }
 
-.promo_btn_container .btn_1 {
+.promo_btn_container .btn {
   margin-left: 20px;
   float: right;
 }
