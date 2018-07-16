@@ -200,6 +200,24 @@ a:hover {
   transition: 0.08s;
 }
 
+.btn_3  {
+  display: inline-block;
+  padding: 7px 13px 7px 13px;
+  background-color: #3D81A1;
+  border-radius: 3px;
+  min-width: 80px;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+}
+
+.btn_3:hover  {
+  text-decoration: none;
+  color: #fff;
+  background-color: #89B9D0;
+  transition: 0.08s;
+}
+
 .g_btn  {
   display: inline-block;
   padding: 6px 12px 6px 12px;
