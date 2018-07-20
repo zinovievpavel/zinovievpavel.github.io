@@ -186,6 +186,7 @@
 
 .promo_header_container {
   min-height: 30px;
+  margin-top: -6px;
 }
 
 .promo_text_container {
