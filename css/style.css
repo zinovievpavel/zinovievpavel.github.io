@@ -191,6 +191,7 @@
 .promo_text_container {
   max-height: 100px;
   max-height: 150px;
+  margin-top: -5px;
   /* margin-top: 20px; */
 }
 
