@@ -49,12 +49,12 @@
 
 .gallery_item a {
   display: block;
-	border-bottom: 3px solid white;
+	border-bottom: 2px solid white;
   /* position: relative; */
 }
 
 .gallery_item a:hover {
-	border-bottom: 3px solid #ff6e6e;
+	border-bottom: 2px solid #ff6e6e;
 }
 
 .gallery_item figcaption {
