@@ -1,0 +1,23 @@
+
+.otl  {
+  outline: 1px solid black;
+}
+
+body  {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  box-sizing: border-box;
+}
+
+.top-section  {
+  background-color: #ededed;
+}
+
+.another_section  {
+  min-height: 100px;
+  width: 100%;
+  background-color: gray;
+}
