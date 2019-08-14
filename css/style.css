@@ -1,0 +1,196 @@
+/* === Для отображения границ блоков === */
+  /* .otl  {
+    outline: 1px solid blue;
+  } */
+
+
+.center_content {
+  /* margin: 0px 80px 0px 80px; */
+}
+
+.wall {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: auto;
+  height: 450px;
+  padding: 0 50px 0 50px;
+}
+
+.wall_bg  {
+  background-image: url('../gallery/full/gallery-img-7.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  border-right:  2px solid #ff6e6e;
+}
+
+.wall_bg img  {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.wall_text_container  {
+  width: 350px;
+  min-height: 5 0px;
+  padding: 15px;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(255, 112, 112, 0.5);
+  border-right: 2px solid #ff6e6e;
+  border-radius: 2px;
+}
+
+.wall_text_header {
+  color: #f2f2f2;
+  text-shadow: 1px 1px 1px #333333;
+}
+
+/* === Стили карточек Тем === */
+
+.promo_container  {
+  padding-top: 0px;
+  margin: 0px auto 0px auto;
+  margin-bottom: 30px;
+  width: 700px;
+  min-height: 500px;
+}
+
+.promo  {
+  background-color: white;
+  margin: 20px auto 40px auto;
+  width: 100%;
+  height: 200px;
+  border-right: 2px solid #ff6e6e;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  transition: 0.5s;
+}
+
+.promo:hover  {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.promo section  {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.promo_pic  {
+  height: 200px;
+  width: 200px;
+}
+
+.promo_description  {
+  position: relative;
+  margin: 20px;
+  height: 160px;
+  width: 430px;
+  margin-left: 30px;
+}
+
+.promo_header_container {
+  min-height: 30px;
+  margin-top: -6px;
+}
+
+.promo_text_container {
+  max-height: 100px;
+  max-height: 150px;
+  margin-top: -5px;
+  /* margin-top: 20px; */
+}
+
+.promo_btn_container {
+  position: absolute;
+  bottom: 0px;
+  width: inherit;
+}
+
+.promo_btn_container .btn {
+  margin-left: 20px;
+  float: right;
+}
+
+
+
+/* VVV aside блоки пока не используются для дальнейших разбирательств VVV */
+
+/* === Стили блока справа === */
+/* Контейнер */
+.promo_aside_container  {
+  float: left;
+  margin-left: 60px;
+  width: 250px;
+}
+
+/* Сам блок */
+.promo_aside  {
+  background-color: white;
+  margin-top: 20px;
+  border-top: 2px solid #ff6e6e;
+  border-bottom: 2px solid #ff6e6e;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  transition: 0.5s;
+  min-height: 435px;
+  padding: 15px 10px 10px 10px;
+}
+
+/* Стили блока при наведении */
+.promo_aside:hover  {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Стили ссылок в блоке */
+.promo_aside a  {
+  display: block;
+  width: 87%;
+  min-height: 10px;
+  border: 1px solid rgba(255,110,110,0.3);
+  /* box-shadow: 0 0 1px rgba(255,110,110,0.8); */
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 10px 14px;
+
+  color: black;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Стили ссылок у блоке при наведении */
+.promo_aside a:hover  {
+  text-decoration: none;
+  background-color: rgba(255,110,110,0.03);
+  /* font-weight: bold; */
+  /* box-shadow: 0 0 3px rgba(255,110,110,1); */
+  border: 1px solid rgba(255,110,110,0.8);
+}
+
+/* Стиль поперечной линии в блоке ссылоки */
+.promo_aside hr  {
+  border: 0.5px solid rgba(255,110,110,0.3);
+}
+
+/* Стиль текста под поперечной линией */
+.promo_aside_disclaimer {
+  color: #8c8c8c;
+  font-size: 9.5px;
+  line-height: 1.4;
+}
+
+.promo_aside > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ } /* Сброс стилей списка (костыли) */
+
+.promo_aside_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} /* Сброс стилей списка (костыли) */
