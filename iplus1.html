@@ -24,14 +24,20 @@
 
     .wrapper {
       min-height: 100vh;
+      min-width: 320px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      padding: 1em;
+    }
+
+    .logo-item {
+      padding: 3em;
     }
 
     .logo-item > p {
-      padding: 0px 40px;
+      padding: 1em;
       text-align: center;
     }
 
@@ -82,56 +88,56 @@
 
   <div class="wrapper">
     <div class="logo-item" id="logo-1">
-      <svg class="logo-svg" width="360" height="200">
-        <path d="M 40,40, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
-        <path d="M 200,40, h 80, v 80, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
+      <svg class="logo-svg" width="280" height="120">
+        <path d="M 0,0, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
+        <path d="M 160,0, h 80, v 80, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
       </svg>
       <p>При наведении</p>
     </div>
     <div class="logo-item" id="logo-2">
-      <svg class="logo-svg animate-red" width="360" height="200">
-        <path d="M 40,40, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
-        <path d="M 200,40, h 80, v 80, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
+      <svg class="logo-svg animate-red" width="280" height="120">
+        <path d="M 0,0, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
+        <path d="M 160,0, h 80, v 80, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
       </svg>
       <p>Постоянная анимация</p>
     </div>
     <div class="logo-item" id="logo-3">
-      <svg class="logo-svg" width="360" height="200">
-        <path d="M 40,40, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
-        <path d="M 200,40, h 80, v 80, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
+      <svg class="logo-svg" width="280" height="120">
+        <path d="M 0,0, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
+        <path d="M 160,0, h 80, v 80, h 40, v 40, h -120, v -40, h 40, v -40, h -40, z" />
       </svg>
       <p>Крутилка</p>
     </div>
     <div class="logo-item" id="logo-6">
-      <svg class="logo-svg" width="360" height="200">
-        <path d="M 40,40, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, z" />
-        <path d="M 200,40, h 80, v 80, l 40 40, h -120, v -40, h 40, v -40, h -40, z" />
+      <svg class="logo-svg" width="280" height="120">
+        <path d="M 0,0, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, z" />
+        <path d="M 160,0, h 80, v 80, l 40 40, h -120, v -40, h 40, v -40, h -40, z" />
       </svg>
       <p>Острые углы</p>
     </div>
     <div class="logo-item" id="logo-5">
-      <svg class="logo-svg" width="280" height="240">
-        <path d="M 40,40, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, z" />
-        <path d="M 120,80, h 80, v 80, l 40 40, h -120, v -40, h 40, v -40, h -40, z" />
+      <svg class="logo-svg" width="200" height="160">
+        <path d="M 0,0, h 120, v 40, h -40, v 40, h 40, v 40, h -120, v -40, h 40, v -40, z" />
+        <path d="M 80,40, h 80, v 80, l 40 40, h -120, v -40, h 40, v -40, h -40, z" />
       </svg>
       <p>Острые углы и совмещенные</p>
     </div>
     <div class="logo-item" id="logo-4">
-      <svg class="logo-svg" width="360" height="200">
+      <svg class="logo-svg" width="280" height="120">
+        <path d="M 0,0, h 40, v 40, h -40, z" />
+        <path d="M 40,0, h 40, v 40, h -40, z" />
+        <path d="M 80,0, h 40, v 40, h -40, z" />
         <path d="M 40,40, h 40, v 40, h -40, z" />
-        <path d="M 80,40, h 40, v 40, h -40, z" />
-        <path d="M 120,40, h 40, v 40, h -40, z" />
+        <path d="M 0,80, h 40, v 40, h -40, z" />
+        <path d="M 40,80, h 40, v 40, h -40, z" />
         <path d="M 80,80, h 40, v 40, h -40, z" />
-        <path d="M 40,120, h 40, v 40, h -40, z" />
-        <path d="M 80,120, h 40, v 40, h -40, z" />
-        <path d="M 120,120, h 40, v 40, h -40, z" />
 
+        <path d="M 160,0, h 40, v 40, h -40, z" />
+        <path d="M 200,0, h 40, v 40, h -40, z" />
         <path d="M 200,40, h 40, v 40, h -40, z" />
-        <path d="M 240,40, h 40, v 40, h -40, z" />
+        <path d="M 160,80, h 40, v 40, h -40, z" />
+        <path d="M 200,80, h 40, v 40, h -40, z" />
         <path d="M 240,80, h 40, v 40, h -40, z" />
-        <path d="M 200,120, h 40, v 40, h -40, z" />
-        <path d="M 240,120, h 40, v 40, h -40, z" />
-        <path d="M 280,120, h 40, v 40, h -40, z" />
       </svg>
       <p>Отдельные квадраты</p>
     </div>
