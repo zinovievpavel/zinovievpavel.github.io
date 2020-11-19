@@ -1,0 +1,113 @@
+
+body {
+    /* font-family: Helvetica, sans-serif; */
+    /* font-size: 16px; */
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ebebeb;
+}
+
+:root {
+    font-size: 22px;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 50vw;
+    padding: 2em;
+    text-align: right;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.card span {
+    display: block;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+.card h1 span{
+    line-height: 5.5rem;
+}
+
+.card .contact-list {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.contact-list li a {
+    display: block;
+    padding: 1em 2em;
+    margin-left: 1em;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ebebeb;
+}
+
+
+
+.square-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 20vh;
+    height: 20vh;
+    background-color: #ebebeb;
+    transform: rotate(-2deg);
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 1024px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .card {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card .contact-list {
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .contact-list li {
+        margin-bottom: 1.4em;
+    }
+
+    .square-container {
+        min-height: 100vh;
+    }
+
+}

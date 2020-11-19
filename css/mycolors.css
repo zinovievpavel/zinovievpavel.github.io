@@ -1,0 +1,19 @@
+/* My color palette v.1 */
+:root {
+  /* basic colors */
+  --clr-white: #FAFAFA;
+  --clr-black: #111111;
+
+  /* comics color palette */
+  --clr-light-red: #DB494C; /* light red */
+  --clr-pink: #DB9B9B; /* pink */
+  --clr-dark-purple: #43314B; /* dark purple */
+  --clr-light-blue: #89A6C8; /* light blue */
+
+  /* retro stripes color palette */
+  --clr-yellow: #EEC352; /* yellow */
+  --clr-orange: #D68124; /* orange */
+  --clr-red: #BF3913; /* red */
+  --clr-blue: #25496B; /* blue */
+  --clr-navy-blue: #122545; /* navy blue */
+}
