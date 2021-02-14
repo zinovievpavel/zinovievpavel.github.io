@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lil helper</title>
+    <!-- <link rel="stylesheet" href="./css/medium-reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer charset="utf-8"></script>
+
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="model-input">Модель</label>
+            <input id="model-input" class="model-input" type="text" name="model" placeholder="Corolla">
+        </div>
+        <div>
+            <label for="price-input">Стоимость</label>
+            <input id="price-input" class="price-input" type="number" name="price" placeholder="1 000 000">
+        </div>
+        <div>
+            <label for="benefit-input">Выгода</label>
+            <input id="benefit-input" class="benefit-input" type="number" name="benefit" placeholder="100 000">
+        </div>
+        <button id="calc-btn" class="calc-btn">Добавить</button>
+    </form>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Модель</th>
+                <th>Стоимость</th>
+                <th>Половина стоимости</th>
+                <th>Выгода</th>
+                <th>Стоимость с учетом выгоды</th>
+                <th>Платеж<sup>*</sup></th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr>
+                <td>Camry</td>
+                <td>1 800 000</td>
+                <td>1 800 000</td>
+                <td>100 000</td>
+                <td>1 700 000</td>
+                <td>8 900</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="clear-local-data-btn">Очистить</button>
+</body>
+</html>
