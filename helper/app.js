@@ -3,8 +3,7 @@ To do:
 - Создавать таблицу с данными
 - Добавлять по одной строке
 - Убирать по строчно
-- Сортировка данных
-
+- Сортировка данных в таблице
 */
 
 const modelElem = document.querySelector('.model-input');
@@ -68,22 +67,3 @@ let dataWipe = function clearLocalData() {
 
 calcBtnElem.addEventListener('click', addCar); // Слушаем кнопку и выполняем addCar
 clearLocalDataBtnElem.addEventListener('click', dataWipe); // Слушаем кнопку и стираем всю дату
-
-
-
-// function createTable() {
-//     let thead = document.createElement('thead');
-//     return thead;
-// }
-
-function addRow() {
-    let template = '
-        <tr>
-            <td>cars[0]</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    '
-}
