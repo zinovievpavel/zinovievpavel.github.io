@@ -29,6 +29,16 @@
     <script src="app.js" defer charset="utf-8"></script>
 </head>
 
+<!-- 
+    To do:
+    - Блок с дисклеймером
+    - Поп-ап с инструкцией
+    - Блок когда таблички нет - "I'm sorry, but there is no data available"
+    - Пасхалку
+    - Нормальный футер, два раздельных в каждую секцию и перенести туда credits и дисклеймер
+    - Мобильную версию конечно
+ -->
+
 <body>
     <main class="main-grid">
 
@@ -36,21 +46,23 @@
 
             <div class="inner-section">
                 <!-- <h1 class="main-title">Little Helper</h1> -->
-                <h2 class="lh-h2-title">Модель</h2>
+                <h2 class="lh-h2-title">Input</h2>
                 <form class="addmodel-form">
                     <div class="input-block">
-                        <label for="model-input">Модель&nbsp;<span class="acc-el">*</span></label>
+                        <label for="model-input">Model&nbsp;<span class="acc-el">*</span></label>
                         <input id="model-input" class="model-input" type="text" name="model" placeholder="Corolla" required>
                     </div>
                     <div class="input-block">
-                        <label for="price-input">Стоимость&nbsp;<span class="acc-el">*</span></label>
+                        <label for="price-input">Price&nbsp;<span class="acc-el">*</span></label>
                         <input id="price-input" class="price-input" type="number" name="price" placeholder="1 000 000" required>
                     </div>
                     <div class="input-block">
-                        <label for="benefit-input">Выгода</label>
+                        <label for="benefit-input">Benefit</label>
                         <input id="benefit-input" class="benefit-input" type="number" name="benefit" placeholder="100 000">
                     </div>
-                    <button id="calc-btn" class="btn btn-white calc-btn">Добавить в таблицу</button>
+                    <div class="btn-collection">
+                        <button id="calc-btn" class="btn btn-white calc-btn">Add</button>
+                    </div>
                     <footer>
                         <ul class="credits-list">
                             <li><a href="https://bstd.ru/" target="_blank"><span>@</span>bstd</a></li>
@@ -65,16 +77,16 @@
         <section class="lh-section lh-section__light data-section">
 
             <div class="inner-section">
-                <h2 class="lh-h2-title">Таблица</h2>
+                <h2 class="lh-h2-title">Output</h2>
                 <table id="data-table">
                     <thead>
                         <tr>
-                            <th>Модель</th>
-                            <th>Стоимость</th>
-                            <th>Половина стоимости</th>
-                            <th>Выгода</th>
-                            <th>Стоимость <br>с выгодой</th>
-                            <th>Платеж<sup>*</sup></th>
+                            <th width="20%">Model</th>
+                            <th width="16%">Price</th>
+                            <th width="16%">Half price</th>
+                            <th width="16%">Benefit</th>
+                            <th width="16%">Price w/ benefit</th>
+                            <th width="16%">Payment&nbsp;*</th>
                         </tr>
                     </thead>
                     <tbody class="tbody">
@@ -87,16 +99,18 @@
                             <td>8 900</td>
                         </tr>
                         <tr>
-                            <td>Camry</td>
-                            <td>1 800 000</td>
-                            <td>600 000</td>
-                            <td>100 000</td>
-                            <td>1 700 000</td>
-                            <td>8 900</td>
+                            <td>RAV4</td>
+                            <td>2 458 000</td>
+                            <td>1 226 000</td>
+                            <td>150 000</td>
+                            <td>1 093 000</td>
+                            <td>13 100</td>
                         </tr>
                     </tbody>
                 </table>
-                <button id="clear-local-data-btn" class="btn btn-dark">Очистить расчеты</button>
+                <div class="btn-collection">
+                    <button id="clear-local-data-btn" class="btn btn-dark">Clear</button>
+                </div>
             </div>
 
         </section>
