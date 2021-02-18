@@ -3,38 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lil helper</title>
+    <title>Little Helper</title>
+    <!-- <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64 100x100" href="./favicon.png"> -->
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Little Helper">
+    <meta name="description" content="Описание">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Little Helper">
+    <meta property="og:description" content="Описание">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Little Helper">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
     <link rel="stylesheet" href="../css/medium-reset.css">
-    <link rel="stylesheet" href="../css/mycolors.css">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer charset="utf-8"></script>
-
 </head>
 
 <body>
-    <div class="wrapper">
-        <main class="main-grid">
-            <h1 class="main-title">Little Helper</h1>
-            <section class="form-section">
-                <h2>Добавить</h2>
-                <form>
-                    <div>
-                        <label for="model-input">Модель</label>
-                        <input id="model-input" class="model-input" type="text" name="model" placeholder="Corolla">
+    <main class="main-grid">
+
+        <section class="lh-section lh-section__dark form-section">
+
+            <div class="inner-section">
+                <!-- <h1 class="main-title">Little Helper</h1> -->
+                <h2 class="lh-h2-title">Модель</h2>
+                <form class="addmodel-form">
+                    <div class="input-block">
+                        <label for="model-input">Модель&nbsp;<span class="acc-el">*</span></label>
+                        <input id="model-input" class="model-input" type="text" name="model" placeholder="Corolla" required>
                     </div>
-                    <div>
-                        <label for="price-input">Стоимость</label>
-                        <input id="price-input" class="price-input" type="number" name="price" placeholder="1 000 000">
+                    <div class="input-block">
+                        <label for="price-input">Стоимость&nbsp;<span class="acc-el">*</span></label>
+                        <input id="price-input" class="price-input" type="number" name="price" placeholder="1 000 000" required>
                     </div>
-                    <div>
+                    <div class="input-block">
                         <label for="benefit-input">Выгода</label>
                         <input id="benefit-input" class="benefit-input" type="number" name="benefit" placeholder="100 000">
                     </div>
-                    <button id="calc-btn" class="calc-btn">Добавить</button>
+                    <button id="calc-btn" class="btn btn-white calc-btn">Добавить в таблицу</button>
+                    <footer>
+                        <ul class="credits-list">
+                            <li><a href="https://bstd.ru/" target="_blank"><span>@</span>bstd</a></li>
+                            <li><a href="https://t.me/zinoviev_pavel" target="_blank"><span>@</span>zinoviev_pavel</a></li>
+                        </ul>
+                    </footer>
                 </form>
-            </section>
-            <section class="data-section">
-                <h2>Таблица</h2>
+            </div>
+
+        </section>
+
+        <section class="lh-section lh-section__light data-section">
+
+            <div class="inner-section">
+                <h2 class="lh-h2-title">Таблица</h2>
                 <table id="data-table">
                     <thead>
                         <tr>
@@ -65,10 +96,12 @@
                         </tr>
                     </tbody>
                 </table>
-                <button id="clear-local-data-btn">Очистить</button>
-            </section>
-            <!-- <footer> тест </footer> -->
-        </main>
-    </div>  
+                <button id="clear-local-data-btn" class="btn btn-dark">Очистить расчеты</button>
+            </div>
+
+        </section>
+
+        <!-- <footer> тест </footer> -->
+    </main>
 </body>
 </html>
