@@ -50,6 +50,10 @@ body {
     font-size: 16px;
     min-width: 320px;
 }
+
+a {
+    color: inherit;
+}
 /* Chrome */
 input[type=number]::-webkit-inner-spin-button {
     appearance: none;
@@ -172,6 +176,9 @@ input[type=number] {
 .btn-collection > *:not(:last-child){
     margin-right: 1rem;
 }
+.form-section > footer, .data-section footer {
+    padding: 2rem 0rem 0rem 0rem;
+}
 
 
 /* Input Section */
@@ -182,9 +189,6 @@ input[type=number] {
     margin: 0rem 4rem;
     width: 100%;
     max-width: 360px;
-}
-.form-section > footer {
-    padding: 2rem 0rem 0rem 0rem;
 }
 .addmodel-form, .table-container, .no-data {
     padding-top: 1rem;
@@ -284,10 +288,12 @@ input[type=number] {
 .data-table tbody td:last-child {
     border-right: none;
 }
-
 .data-table tr td:not(:first-child),
 .data-table tr th:not(:first-child) {
     text-align: right;
+}
+.disc {
+    font-size: 0.9rem;‎
 }
 
 
