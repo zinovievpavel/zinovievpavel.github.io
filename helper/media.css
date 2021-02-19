@@ -1,0 +1,50 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+    .lh-section {
+        padding: 2rem 2rem;
+    }
+    .form-section {
+        width: 35%;
+    }
+    .form-section > * {
+        margin: 0rem 2rem;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+    .main-grid {
+        flex-direction: column;
+    }
+    .form-section {
+        width: 100%;
+    }
+    .data-section {
+        width: 100%;
+    }
+    .lh-h2-title {
+        padding: 0rem 0rem 1rem 0rem;
+        margin: 0rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+    .lh-h2-title::after {
+        left: 33px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}

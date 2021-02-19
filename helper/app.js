@@ -11,6 +11,9 @@ const priceElem = document.querySelector('.price-input');
 const benefitElem = document.querySelector('.benefit-input');
 const calcBtnElem = document.getElementById('calc-btn');
 const clearLocalDataBtnElem = document.getElementById('clear-local-data-btn');
+const modalBtnElem = document.querySelector('.modal-btn');
+const popupOverlayElem = document.querySelector('.popup-overlay');
+const popupCloseElem = document.querySelector('.popup-close');
 let cars = [];
 
 const addCar = function(ev) {
@@ -64,7 +67,7 @@ function getLmpPayment(number) {
     return Math.ceil(lmp);
 }
 
-// Пишем в local storage
+// Пишем carsData в local storage
 function writeLocalData(arr) {
     localStorage.setItem('сarsData', JSON.stringify(arr));
 };
@@ -91,4 +94,12 @@ let dataWipe = function clearLocalData() {
 
 calcBtnElem.addEventListener('click', addCar); // Слушаем кнопку и выполняем addCar
 clearLocalDataBtnElem.addEventListener('click', dataWipe); // Слушаем кнопку и стираем всю дату
+modalBtnElem.addEventListener('click', function() {
+    popupOverlayElem.classList.toggle('opacity-0');
+    popupOverlayElem.classList.toggle('visibility-hidden');
+}); // Открытие поп-апа по кнопке
+popupCloseElem.addEventListener('click', function() {
+    popupOverlayElem.classList.toggle('opacity-0');
+    popupOverlayElem.classList.toggle('visibility-hidden');
+}); // Открытие поп-апа по кнопке
 
