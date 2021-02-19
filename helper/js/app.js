@@ -63,8 +63,11 @@ function half(number) {
 
 // Получаем платеж по LMP + округление
 function getLmpPayment(number) {
-    let lmp = number * 0.5 * 0.125 / 12; // Формула расчет LMP
-    return Math.ceil(lmp);
+    let firstPayment = 0.5; // Первоначальный взнос
+    let creditRate = 0.125; // Кридитная ставка
+    let creditYears = 12; // Срок кредитования
+    let lmp = number * firstPayment * creditRate / creditYears; // Формула расчет LMP
+    return Math.ceil(lmp); // Откругляем в большую сторону и возвращаем
 }
 
 // Пишем carsData в local storage
