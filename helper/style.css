@@ -266,6 +266,7 @@ input[type=number] {
 }
 .data-table tbody tr {
     border-bottom: 1px solid var(--tme-grey-5);
+    background-color: var(--tme-white);
     transition: 0.3s;
 }
 .data-table tbody tr:hover {
