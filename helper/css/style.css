@@ -271,10 +271,13 @@ input[type=number] {
 .data-table tbody tr {
     border-bottom: 1px solid var(--tme-grey-5);
     background-color: var(--tme-white);
-    transition: 0.3s;
+    transition: 0.15s;
 }
 .data-table tbody tr:hover {
     font-weight: 800;
+}
+.data-table tbody:hover tr:not(:hover) {
+    color: var(--tme-grey-2);
 }
 .data-table tbody tr:last-child {
     border-bottom: none;
