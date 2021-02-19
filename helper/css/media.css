@@ -85,6 +85,12 @@ https://codepen.io/AllThingsSmitty/pen/MyqmdM?editors=1100
     .data-table td:last-child {
         border-bottom: 0;
     }
+    .data-table tbody tr:hover {
+        font-weight: normal;
+    }
+    .data-table tbody:hover tr:not(:hover) {
+        color: inherit;
+    }
 }
 
 /* Extra Small Devices, Phones */
