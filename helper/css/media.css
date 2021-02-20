@@ -11,6 +11,9 @@
     .form-section > * {
         margin: 0rem 2rem;
     }
+    .data-section {
+        width: 65%;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -31,6 +34,11 @@
     }
     .lh-h2-title::after {
         left: 33px;
+    }
+
+    .data-section > * {
+        margin: 0rem 2rem;
+        max-width: 360px;
     }
 }
 
