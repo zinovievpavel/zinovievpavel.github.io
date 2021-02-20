@@ -35,11 +35,6 @@
     .lh-h2-title::after {
         left: 33px;
     }
-
-    .data-section > * {
-        margin: 0rem 2rem;
-        max-width: 360px;
-    }
 }
 
 /* Small Devices, Tablets */
@@ -53,6 +48,10 @@ https://codepen.io/AllThingsSmitty/pen/MyqmdM?editors=1100
     .data-table {
         border: 0;
         width: 100%;
+    }
+    .data-section > * {
+        margin: 0rem 2rem;
+        max-width: 360px;
     }
     .data-table thead {
         border: none;
@@ -98,6 +97,20 @@ https://codepen.io/AllThingsSmitty/pen/MyqmdM?editors=1100
     }
     .data-table tbody:hover tr:not(:hover) {
         color: inherit;
+    }
+
+    .popup {
+        width: 90%;
+    }
+    .popup .btn-collection {
+        flex-direction: column;
+    }
+    .popup .btn-collection > * {
+        /* margin-bottom: 1rem; */
+    }
+    .popup .btn-collection > *:not(:last-child){
+        margin-right: 0rem;
+        margin-bottom: 1rem;
     }
 }
 

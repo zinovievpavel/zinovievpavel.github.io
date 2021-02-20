@@ -13,7 +13,9 @@ const calcBtnElem = document.getElementById('calc-btn');
 const clearLocalDataBtnElem = document.getElementById('clear-local-data-btn');
 const modalBtnElem = document.querySelector('.modal-btn');
 const popupOverlayElem = document.querySelector('.popup-overlay');
-const popupCloseElem = document.querySelector('.popup-close');
+// const popupCloseElem = document.getElementById('popup-close');
+const popupCloseElem = document.querySelector('.btn-close');
+
 let cars = [];
 
 const addCar = function(ev) {
@@ -97,10 +99,12 @@ let dataWipe = function clearLocalData() {
 
 calcBtnElem.addEventListener('click', addCar); // Слушаем кнопку и выполняем addCar
 clearLocalDataBtnElem.addEventListener('click', dataWipe); // Слушаем кнопку и стираем всю дату
+
 modalBtnElem.addEventListener('click', function() {
     popupOverlayElem.classList.toggle('opacity-0');
     popupOverlayElem.classList.toggle('visibility-hidden');
 }); // Открытие поп-апа по кнопке
+
 popupCloseElem.addEventListener('click', function() {
     popupOverlayElem.classList.toggle('opacity-0');
     popupOverlayElem.classList.toggle('visibility-hidden');
