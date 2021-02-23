@@ -26,6 +26,7 @@
     }
     .data-section {
         width: 100%;
+        flex-grow: 1;
     }
     .lh-h2-title {
         padding: 0rem 0rem 1rem 0rem;
@@ -63,18 +64,18 @@ https://codepen.io/AllThingsSmitty/pen/MyqmdM?editors=1100
         position: absolute;
         width: 1px;
     }
-    .data-table tr {
+    .data-table tr:not(:last-child) {
         display: block;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
     .data-table tbody td {
-          border-bottom: 1px solid var(--tme-grey-5);
-          border-right: none;
+        border-bottom: 1px solid var(--tme-grey-5);
+        border-right: none;
     }
     .data-table td {
         display: block;
         font-size: 1.1em;
-        font-weight: bold;
+        /* font-weight: bold; */
         text-align: right;
     }
     .data-table td:first-child {
@@ -86,7 +87,7 @@ https://codepen.io/AllThingsSmitty/pen/MyqmdM?editors=1100
     .data-table td::before {
         content: attr(data-label);
         float: left;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 0.9em;
     }
     .data-table td:last-child {

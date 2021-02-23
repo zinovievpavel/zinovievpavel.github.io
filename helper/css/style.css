@@ -30,7 +30,6 @@
     url(/helper/fonts/ToyotaType-Bold.ttf) format("truetype"), 
     url(/helper/fonts/ToyotaType-Bold.svg) format("svg")
 }
-
 /* General */
 :root {
     font-family: 'Toyota Regular', Arial, Helvetica, sans-serif;
@@ -50,7 +49,6 @@ body {
     font-size: 16px;
     min-width: 320px;
 }
-
 a {
     color: inherit;
 }
@@ -97,9 +95,9 @@ input[type=number] {
 .btn-white:hover {
     background-color: var(--tme-grey-5);
 }
-.no-data {
-    text-align: center;
-    padding: 1rem;
+.no-data-message {
+    /* text-align: center; */
+    padding: 2rem;
     background-color: var(--tme-grey-6);
 }
 .lh-h2-title, 
@@ -236,9 +234,10 @@ input[type=number] {
     padding: .25rem .5rem;
     text-decoration: none;
     color: inherit;
+    /* transition: 0.2s; */
 }
 .credits-list a span {
-    transition: 0.3s;
+    transition: 0.15s;
 }
 .credits-list a:hover span {
     color: var(--tme-red);
@@ -278,7 +277,7 @@ input[type=number] {
     font-weight: 800;
 }
 .data-table tbody:hover tr:not(:hover) {
-    color: var(--tme-grey-2);
+    color: var(--tme-grey-4);
 }
 .data-table tbody tr:last-child {
     border-bottom: none;
