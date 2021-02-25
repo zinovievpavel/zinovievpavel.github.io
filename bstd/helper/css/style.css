@@ -1,34 +1,34 @@
 @font-face {
 	font-family: Toyota Regular;
-	src: url(/helper/fonts/ToyotaType-Regular.eot);
-    src: url(/helper/fonts/ToyotaType-Regular.woff2) format("woff2"), 
-    url(/helper/fonts/ToyotaType-Regular.woff) format("woff"), 
-    url(/helper/fonts/ToyotaType-Regular.ttf) format("truetype"), 
-    url(/helper/fonts/ToyotaType-Regular.svg) format("svg")
+	src: url(.././fonts/ToyotaType-Regular.eot);
+    src: url(.././fonts/ToyotaType-Regular.woff2) format("woff2"), 
+    url(.././fonts/ToyotaType-Regular.woff) format("woff"), 
+    url(.././fonts/ToyotaType-Regular.ttf) format("truetype"), 
+    url(.././fonts/ToyotaType-Regular.svg) format("svg")
 }
 @font-face {
 	font-family: Toyota Base;
-	src: url(/helper/fonts/ToyotaType-Book.eot);
-    src: url(/helper/fonts/ToyotaType-Book.woff2) format("woff2"), 
-    url(/helper/fonts/ToyotaType-Book.woff) format("woff"), 
-    url(/helper/fonts/ToyotaType-Book.ttf) format("truetype"), 
-    url(/helper/fonts/ToyotaType-Book.svg) format("svg")
+	src: url(.././fonts/ToyotaType-Book.eot);
+    src: url(.././fonts/ToyotaType-Book.woff2) format("woff2"), 
+    url(.././fonts/ToyotaType-Book.woff) format("woff"), 
+    url(.././fonts/ToyotaType-Book.ttf) format("truetype"), 
+    url(.././fonts/ToyotaType-Book.svg) format("svg")
 }
 @font-face {
 	font-family: Toyota Semibold;
-	src: url(/helper/fonts/ToyotaType-Semibold.eot);
-    src: url(/helper/fonts/ToyotaType-Semibold.woff2) format("woff2"), 
-    url(/helper/fonts/ToyotaType-Semibold.woff) format("woff"), 
-    url(/helper/fonts/ToyotaType-Semibold.ttf) format("truetype"), 
-    url(/helper/fonts/ToyotaType-Semibold.svg) format("svg")
+	src: url(.././fonts/ToyotaType-Semibold.eot);
+    src: url(.././fonts/ToyotaType-Semibold.woff2) format("woff2"), 
+    url(.././fonts/ToyotaType-Semibold.woff) format("woff"), 
+    url(.././fonts/ToyotaType-Semibold.ttf) format("truetype"), 
+    url(.././fonts/ToyotaType-Semibold.svg) format("svg")
 }
 @font-face {
 	font-family: Toyota Bold;
-	src: url(/helper/fonts/ToyotaType-Bold.eot);
-    src: url(/helper/fonts/ToyotaType-Bold.woff2) format("woff2"), 
-    url(/helper/fonts/ToyotaType-Bold.woff) format("woff"), 
-    url(/helper/fonts/ToyotaType-Bold.ttf) format("truetype"), 
-    url(/helper/fonts/ToyotaType-Bold.svg) format("svg")
+	src: url(.././fonts/ToyotaType-Bold.eot);
+    src: url(.././fonts/ToyotaType-Bold.woff2) format("woff2"), 
+    url(.././fonts/ToyotaType-Bold.woff) format("woff"), 
+    url(.././fonts/ToyotaType-Bold.ttf) format("truetype"), 
+    url(.././fonts/ToyotaType-Bold.svg) format("svg")
 }
 /* General */
 :root {
