@@ -1,35 +1,40 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
 body {
     width: 100%;
 }
-
 img {
     max-width: 100%;
     display: block;
 }
-
 a.btn-action-secondary {
     background-color: transparent;
 }
 a.btn-action-secondary:hover {
     background-color: transparent;
 }
-
 .size-limit {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
-
 .promo-block {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 55% 45%;
     grid-template-columns: 55% 45%;
-    grid-template-areas:
+        grid-template-areas:
         "aw st"
         "im ds"
         "im cc"
@@ -39,68 +44,82 @@ a.btn-action-secondary:hover {
     background-color: #F7F7F7;
     padding: 3em;
 }
-
 .promo-block > .section-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: st;
     text-align: left;
 }
 .section-title h2 {
     text-align: left;
 }
-
 .promo-block > .desc {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: ds;
 
     padding-top: 1em;
     padding-bottom: 2em;
     text-indent: 0;
 }
-
 .promo-block > .awards-collection {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: aw;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
 
     display: flex;
 }
-
-
 .award-item:not(:last-child) {
     margin-right: 3em;
 }
-
 .award-item img {
     height: 42px;
 }
-
 .promo-block > .image-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
     grid-area: im;
 }
-
 .image-container img {
     margin-top: 3em;
     margin-bottom: 3em;
 }
-
 .promo-block > .cta-about {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: ca;
 }
-
 .promo-block > .cta-collection {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: cc;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    display: -webkit-box;
 
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
 .cta-item {
     position: relative;
     padding-bottom: 1.2em;
 }
-
 .cta-item:last-child {
     padding-bottom: 0em;
 }
-
 .cta-item p {
     padding-left: 2.1em;
     padding-bottom: 0.8em;
@@ -114,49 +133,48 @@ a.btn-action-secondary:hover {
     width: 20px;
 }
 .tech {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: tc;
 
     padding-top: 2em;
 }
-
 .tech-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 2em;
 }
-
 .tech-list ul {
     list-style-type: disc;
     padding-left: 20px;
     padding-top: 1em;
     color: #595D60;
 }
-
 .tech-list-item:last-child {
     border-right: 1px solid #E5E5E5;
 }
-
 .tech-list-item {
     /* width: 100%; */
-    flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
     border-left: 1px solid #E5E5E5;
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
-
-
-
-
 .award-tooltip {
     position: relative;
     /* display: inline-block; */
 }
-  
 .award-tooltip__toggle {
     cursor: pointer;
 }
-  
 .award-tooltip__content {
     position: absolute;
     z-index: 2;
@@ -167,28 +185,27 @@ a.btn-action-secondary:hover {
     padding: 15px;
     border-radius: 5px;
     background: #f0f0f0;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
 }
-  
 .award-tooltip:hover .award-tooltip__content {
     display: block;
 }
-  
 .award-tooltip__text {
     font: normal 13px/20px 'T1 Body Font';
     margin: 0;
     letter-spacing: .013em;
     color: #000;
 }
-
 @media (max-width: 1200px) {
     .award-item img {
         height: 50px;
     }
     .promo-block {
         padding: 1em;
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        grid-template-areas: 
+            grid-template-areas: 
             "st"
             "ds"
             "aw"
@@ -197,24 +214,58 @@ a.btn-action-secondary:hover {
             "tc"
             "ca";
     }
-
     .tech {
         margin-bottom: 2em;
     }
     .tech-list-item {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         margin-bottom: 2em;
     }
     .tech-list-item:nth-child(2n) {
         border-right: 1px solid #E5E5E5;
     }
+    .promo-block > .section-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    }
+    .promo-block > .desc {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    }
+    .promo-block > .awards-collection {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    }
+    .promo-block > .image-container {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    }
+    .promo-block > .cta-about {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    }
+    .promo-block > .cta-collection {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    }
+    .tech {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    }
 }
-
 @media (max-width: 650px) {
     .tech-list-item {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
     .tech-list-item {
         border-right: 1px solid #E5E5E5;
+    }
+    .tech-list-item:last-child {
+        margin-bottom: 0em;
     }
 }
