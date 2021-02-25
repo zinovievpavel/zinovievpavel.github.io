@@ -212,13 +212,28 @@ input[type=number] {
 .addmodel-form input:focus {
     background-color: var(--tme-grey-4);
 }
-.addmodel-form label {
-    font-size: 0.9rem;
-    width: 30%;
-}
 .addmodel-form .input-block {
     margin-bottom: 1.2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
 }
+.input-block > label {
+    font-size: 0.9rem;
+    grid-column: span 1;
+    grid-row: 1;
+}
+.input-block > span {
+    grid-column: span 1;
+    margin-bottom: 0.6rem;
+    grid-row: 1;
+    margin-left: 0.6em;
+}
+.input-block > input {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
 .credits-list {
     display: flex;
     justify-content: space-around;
@@ -240,6 +255,11 @@ input[type=number] {
     transition: 0.15s;
 }
 .credits-list a:hover span {
+    color: var(--tme-red);
+}
+
+.field-alert {
+    font-size: 0.8rem;
     color: var(--tme-red);
 }
 
@@ -277,7 +297,7 @@ input[type=number] {
     font-weight: 800;
 }
 .data-table tbody:hover tr:not(:hover) {
-    color: var(--tme-grey-4);
+    color: var(--tme-grey-3);
 }
 .data-table tbody tr:last-child {
     border-bottom: none;

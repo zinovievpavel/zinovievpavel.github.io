@@ -5,6 +5,8 @@ To do:
     - Убирать строки из таблицы
     - Сортировка данных в таблице
 
+    - Нормальные алерты при отправки пустых инпутов
+
 Обновление:
     1. Проверяем локальное хранилище
         1.1. Если даты нет - выводим сообщение, что даты нет
@@ -19,11 +21,12 @@ To do:
     2. Обновляем таблицу данными из локального хранилища
 */
 
-const modelElem = document.querySelector('.model-input');
-const priceElem = document.querySelector('.price-input');
-const benefitElem = document.querySelector('.benefit-input');
+const modelElem = document.getElementById('model-input');
+const priceElem = document.getElementById('price-input');
+const benefitElem = document.getElementById('benefit-input');
 const calcBtnElem = document.getElementById('calc-btn');
 const clearLocalDataBtnElem = document.getElementById('clear-local-data-btn');
+
 const modalBtnElem = document.querySelector('.modal-btn');
 const popupOverlayElem = document.querySelector('.popup-overlay');
 const popupCloseElem = document.querySelector('.btn-close');
@@ -34,8 +37,16 @@ let cars = [];
 // Создание объекта модели
 function CarData(model, price, benefit) {
     let halfPrice = String(half(price));
-    let benefitPrice = String(price - benefit);
     let lmp = String(getLmpPayment(price));
+    // let lmp = String(getPayment(price, halfPrice));
+
+    if (benefit === "") {
+        benefit = "–"
+        benefitPrice = price;
+    }
+    else {
+        benefitPrice = String(price - benefit);
+    }
 
     this.model = model;
     this.price = price;
@@ -57,6 +68,21 @@ function getLmpPayment(number) {
     return Math.ceil(lmp); // Откругляем в большую сторону и возвращаем
 }
 
+// Получаем платеж из API кредитного калькулятора
+function getPayment(price, firstPayment) {
+    let creditProgram = 18; // Кредитная программа Комфорт
+    let creditTerm = 60; // Срок кредита, месяцы
+    let requestPayment = new XMLHttpRequest();
+    let restPayment = price - firstPayment; // Остаточный платеж
+    requestPayment.open('GET', 'https://banknew.toyota.ru/v2/credit' + '?p=' + creditProgram + '&pr=' + price + '&s=' + firstPayment + '&q=' + creditTerm + '&r=' + restPayment + '&qd=0&g=0&e=0&cl=off&ti=0&tn=0&td=&dc=2&k=0&kp=0&kt=0&ku=1&i1=0&i2=0&as=0&ai=0&we=0&ts=0&gi=0&ii=0&ma=0&rdc=0');
+    requestPayment.onload = function() {
+        let allProgramData = JSON.parse(requestPayment.responseText);
+        let monthlyPayment = allProgramData.credit.monthly_payment;
+        return Math.ceil(monthlyPayment);
+    };
+    requestPayment.send();
+}
+
 // Сохраняем машины в local storage
 function saveCars() {
     let newCars = [];
@@ -73,12 +99,15 @@ function loadCars() {
 
 // Функция проверки инпутов и оповещения
 function checkRequired() {
+    let fieldRequerdElem = document.querySelectorAll('.field-alert');
     if (modelElem.value == "") {
         alert('Вы не заполнили поле ' + 'Model');
+        // fieldRequerdElem.classList.toggle('d-none');
         return false;
     }
     else if (priceElem.value == "") {
         alert('Вы не заполнили поле ' + 'Price');
+        // fieldRequerdElem.classList.toggle('d-none');
         return false;
     }
     else {
@@ -117,9 +146,6 @@ function parseDataToTable() {
     //     cell(i) = newRow.insertCell(i);
     //     cell(i).innerHTML = data.model;
     // }
-
-
-    
 }
 
 calcBtnElem.addEventListener('click', (ev) => {
@@ -151,3 +177,13 @@ modalBtnElem.addEventListener('click', () => {
 popupCloseElem.addEventListener('click', () => {
     popupOverlayElem.classList.toggle('d-none');
 }); // Открытие поп-апа по кнопке
+
+
+// ==== masking
+
+let inputsMask = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask("+7 (999) 999 99 99");
+
+im.mask(inputsMask);
+
+// ====
