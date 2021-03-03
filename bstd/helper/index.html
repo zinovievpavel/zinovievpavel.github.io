@@ -105,167 +105,33 @@
             <header>
                 <h2 class="lh-h2-title">Output</h2>
             </header>
-            <div class="no-data d-none">
+            <div class="no-data">
                 <div class="no-data-message">
                     <p>I'm sorry, but there is no data available. Try to add something using Input form!</p>
                 </div>
             </div>
-            <div class="table-container">
+            <div class="table-container d-none">
                 <table id="data-table" class="data-table">
                     <thead>
                         <tr>
+                            <th scope="col" width="2%">Id</th>
                             <th scope="col" width="18%">Model</th>
                             <th scope="col" width="18%">Price</th>
-                            <th scope="col" width="17%">Half price</th>
-                            <th scope="col" width="15%">Benefit</th>
+                            <th scope="col" width="16%">Half price</th>
+                            <th scope="col" width="14%">Benefit</th>
                             <th scope="col" width="18%">Price w/ benefit</th>
                             <th scope="col" width="13%">Payment&nbsp;*</th>
                         </tr>
                     </thead>
-                    <tbody class="tbody">
+                    <tbody class="tbody" id="tbody">
                         <tr>
+                            <td data-label="Id">0</td>
                             <td data-label="Model">Corolla</td>
                             <td data-label="Price">1 800 000 р.</td>
                             <td data-label="Half price">600 000 р.</td>
                             <td data-label="Benefit">100 000 р.</td>
                             <td data-label="Price w/ benefit">1 700 000 р.</td>
                             <td data-label="Payment *">8 900 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Camry</td>
-                            <td data-label="Price">1 990 000 р.</td>
-                            <td data-label="Half">890 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 750 000 р.</td>
-                            <td data-label="Payment *">11 000 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">RAV4</td>
-                            <td data-label="Price">2 458 000 р.</td>
-                            <td data-label="Half">1 226 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 093 000 р.</td>
-                            <td data-label="Payment *">13 100 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Corolla</td>
-                            <td data-label="Price">1 800 000 р.</td>
-                            <td data-label="Half price">600 000 р.</td>
-                            <td data-label="Benefit">100 000 р.</td>
-                            <td data-label="Price w/ benefit">1 700 000 р.</td>
-                            <td data-label="Payment *">8 900 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Camry</td>
-                            <td data-label="Price">1 990 000 р.</td>
-                            <td data-label="Half">890 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 750 000 р.</td>
-                            <td data-label="Payment *">11 000 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">RAV4</td>
-                            <td data-label="Price">2 458 000 р.</td>
-                            <td data-label="Half">1 226 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 093 000 р.</td>
-                            <td data-label="Payment *">13 100 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Corolla</td>
-                            <td data-label="Price">1 800 000 р.</td>
-                            <td data-label="Half price">600 000 р.</td>
-                            <td data-label="Benefit">100 000 р.</td>
-                            <td data-label="Price w/ benefit">1 700 000 р.</td>
-                            <td data-label="Payment *">8 900 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Camry</td>
-                            <td data-label="Price">1 990 000 р.</td>
-                            <td data-label="Half">890 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 750 000 р.</td>
-                            <td data-label="Payment *">11 000 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">RAV4</td>
-                            <td data-label="Price">2 458 000 р.</td>
-                            <td data-label="Half">1 226 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 093 000 р.</td>
-                            <td data-label="Payment *">13 100 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Corolla</td>
-                            <td data-label="Price">1 800 000 р.</td>
-                            <td data-label="Half price">600 000 р.</td>
-                            <td data-label="Benefit">100 000 р.</td>
-                            <td data-label="Price w/ benefit">1 700 000 р.</td>
-                            <td data-label="Payment *">8 900 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Camry</td>
-                            <td data-label="Price">1 990 000 р.</td>
-                            <td data-label="Half">890 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 750 000 р.</td>
-                            <td data-label="Payment *">11 000 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">RAV4</td>
-                            <td data-label="Price">2 458 000 р.</td>
-                            <td data-label="Half">1 226 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 093 000 р.</td>
-                            <td data-label="Payment *">13 100 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Corolla</td>
-                            <td data-label="Price">1 800 000 р.</td>
-                            <td data-label="Half price">600 000 р.</td>
-                            <td data-label="Benefit">100 000 р.</td>
-                            <td data-label="Price w/ benefit">1 700 000 р.</td>
-                            <td data-label="Payment *">8 900 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Camry</td>
-                            <td data-label="Price">1 990 000 р.</td>
-                            <td data-label="Half">890 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 750 000 р.</td>
-                            <td data-label="Payment *">11 000 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">RAV4</td>
-                            <td data-label="Price">2 458 000 р.</td>
-                            <td data-label="Half">1 226 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 093 000 р.</td>
-                            <td data-label="Payment *">13 100 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Corolla</td>
-                            <td data-label="Price">1 800 000 р.</td>
-                            <td data-label="Half price">600 000 р.</td>
-                            <td data-label="Benefit">100 000 р.</td>
-                            <td data-label="Price w/ benefit">1 700 000 р.</td>
-                            <td data-label="Payment *">8 900 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">Camry</td>
-                            <td data-label="Price">1 990 000 р.</td>
-                            <td data-label="Half">890 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 750 000 р.</td>
-                            <td data-label="Payment *">11 000 р.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Model">RAV4</td>
-                            <td data-label="Price">2 458 000 р.</td>
-                            <td data-label="Half">1 226 000 р.</td>
-                            <td data-label="Benefit">150 000 р.</td>
-                            <td data-label="Price w/ benefit">1 093 000 р.</td>
-                            <td data-label="Payment *">13 100 р.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -274,7 +140,7 @@
                 </div>
             </div>
             <footer>
-                <p class="disc">*&nbsp;Платеж расчитывается из цены без учета выгоды, по кредитной программе <a href="https://www.toyota.ru/finance-insurance/comfort" target="_blank">«‎Комфорт»</a>.</p>
+                <p class="disc d-none">*&nbsp;Платеж расчитывается из цены без учета выгоды, по кредитной программе <a href="https://www.toyota.ru/finance-insurance/comfort" target="_blank">«‎Комфорт»</a>.</p>
             </footer>
         </section>
 

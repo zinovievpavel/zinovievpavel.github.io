@@ -289,6 +289,7 @@ input[type=number] {
     border-bottom: 1px solid var(--tme-grey-5);
 }
 .data-table tbody tr {
+    position: relative;
     border-bottom: 1px solid var(--tme-grey-5);
     background-color: var(--tme-white);
     transition: 0.15s;
@@ -302,6 +303,13 @@ input[type=number] {
 .data-table tbody tr:last-child {
     border-bottom: none;
 }
+.tbody tr::after {
+    /* content: url(.././assets/cross-icon.svg); */
+    /* width: 40px; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+}
 .data-table tbody td {
     border-right: 1px solid var(--tme-grey-5);
 }
@@ -311,8 +319,10 @@ input[type=number] {
 .data-table tbody td:last-child {
     border-right: none;
 }
-.data-table tr td:not(:first-child),
-.data-table tr th:not(:first-child) {
+.data-table tr td:not(:nth-child(1)),
+.data-table tr th:not(:nth-child(1)),
+.data-table tr td:not(:nth-child(2)),
+.data-table tr th:not(:nth-child(2)), {
     text-align: right;
 }
 .disc {
