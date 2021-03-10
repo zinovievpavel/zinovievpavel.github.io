@@ -2,27 +2,17 @@
 To do:
     - DONE: Добавить id к объекту
     - DONE: Парсить табличку при загрузке страницы, до нажатия кнопки
-    - Разделить функцию парсинга таблички на две: create и update
-
     - DONE: Создавать таблицу с данными
     - DONE: Добавлять по одной строке
+    - Разделить функцию парсинга таблички на две: 
+        Create - что бы генерировать табличку изначально, обновлять, записывать в local storage и прочее
+        Update - простая функция для добавления одной строки
+    - Маска для инпутов
     - Убирать строки из таблицы
     - Сортировка данных в таблице
-
+    - Разобраться с нормальным получением LMP
     - Нормальные алерты при отправки пустых инпутов
-
-Обновление:
-    1. Проверяем локальное хранилище
-        1.1. Если даты нет - выводим сообщение, что даты нет
-        1.2. Если дата есть - выводим таблицу с датой
-    2. При отправке формы, создаем объект с датой из инпутов
-    3. Добавляем объект в массив
-    4. Сохраняем массив в локальное хранилище
-    5. Обновляем таблицу данными из локального хранилища
-
-Кнопка Clear:
-    1. Стираем данные из локального хранилища
-    2. Обновляем таблицу данными из локального хранилища
+    - Маска для данных в таблице
 */
 
 const modelElem = document.getElementById('model-input');
@@ -33,9 +23,6 @@ const clearLocalDataBtnElem = document.getElementById('clear-local-data-btn');
 const dicsElem = document.querySelector('.disc');
 const tableContElem = document.querySelector('.table-container');
 
-const modalBtnElem = document.querySelector('.modal-btn');
-const popupOverlayElem = document.querySelector('.popup-overlay');
-const popupCloseElem = document.querySelector('.btn-close');
 const noDataElem = document.querySelector('.no-data');
 
 const dataTableHeaders = ['Model', 'Price', 'Half price', 'Benefit', 'Price w/ benefit', 'Payment&nbsp;*'];
@@ -44,7 +31,7 @@ let cars = [];
 let carId = 0;
 
 checkLocal();
-createDataTable();
+
 
 // Функция создания таблицы из массива объектов
 function createDataTable() {
@@ -55,30 +42,56 @@ function createDataTable() {
     for (let i = 0; i < cars.length; i++) {
         let row = document.createElement("tr");
         for (let key in cars[i]) {
+            let objValues = cars[i][key];
+            function toNumber(value) {
+                if (typeof(value) === "string" && key !== 'model') {
+                    let toNum = Number(value);
+                    // console.log(toNum);
+                    if (typeof(toNum) === "number") {
+                        let currency = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(toNum)
+                        return currency;
+                    }
+                    else {
+                        // console.log('Это все еще не число');
+                        return value;
+                    }
+                }
+                else if (typeof(value) === "number") {
+                    return value;
+                }
+                else {
+                    // console.log(typeof(value));
+                    return value;
+                }
+            };
 
             let cell = document.createElement("td");
             let createAttr = document.createAttribute('data-label');
 
             cell.setAttributeNode(createAttr);
 
-            cell.innerHTML = cars[i][key];
+            cell.innerHTML = toNumber(objValues);
 
             // Вот это надо как то оптимизировать
             if (key === 'carId') {key = 'Id';} 
-            else if (key === 'model') {key = 'Model';} 
-            else if (key === 'price') {key = 'Price';} 
-            else if (key === 'halfPrice') {key = 'Half price';} 
-            else if (key === 'benefit') {key = 'Benefit';} 
-            else if (key === 'benefitPrice') {key = 'Price w/ benefit';} 
-            else if (key === 'lmp') {key = 'Payment *';}
+            else if (key === 'model') {
+                key = 'Model';} 
+            else if (key === 'price') {
+                key = 'Price';} 
+            else if (key === 'halfPrice') {
+                key = 'Half price';} 
+            else if (key === 'benefit') {
+                key = 'Benefit';} 
+            else if (key === 'benefitPrice') {
+                key = 'Price w/ benefit';} 
+            else if (key === 'lmp') {
+                key = 'Payment *';}
 
             createAttr.value = key;
-            // console.log('Вот он ' + key + ' и это ' + typeof(key));
             row.appendChild(cell);
         }
         tBody.appendChild(row);
     }
-    // toNormal('benefit');
 }
 
 // Создание объекта модели
@@ -86,7 +99,7 @@ function CarData(model, price, benefit) {
     carId++;
     let halfPrice = String(half(price));
     let lmp = String(getLmpPayment(price));
-    // let lmp = String(getPayment(price, halfPrice));
+    // let lmp = String(getPayment(price, halfPrice)); // Функция не работает
 
     if (benefit === "") {
         benefit = "–";
@@ -134,14 +147,6 @@ function getPayment(price, firstPayment) {
     requestPayment.send();
 };
 
-// Сохраняем машины в local storage
-function saveCars() {
-    let newCars = [];
-    newCars = JSON.stringify(cars);
-    localStorage.setItem('carsLocal', newCars);
-}
-
-// Загружаем машины из local storage
 
 
 // Функция проверки инпутов и оповещения
@@ -196,25 +201,39 @@ clearLocalDataBtnElem.addEventListener('click', () => {
     popupOverlayElem.classList.toggle('d-none'); // Вырубаем поп-ап
 });
 
-modalBtnElem.addEventListener('click', () => {
-    popupOverlayElem.classList.toggle('d-none');
-}); // Открытие поп-апа по кнопке
 
+const modalBtnElem = document.querySelector('.modal-btn');
+const popupOverlayElem = document.querySelector('.popup-overlay');
+const popupCloseElem = document.querySelector('.btn-close');
+// Открытие поп-апа по кнопке
+modalBtnElem.addEventListener('click', () => {
+    popupOverlayElem.classList.remove('d-none');
+}); 
+// Закрытие поп-апа по кнопке
 popupCloseElem.addEventListener('click', () => {
-    popupOverlayElem.classList.toggle('d-none');
-}); // Открытие поп-апа по кнопке
+    popupOverlayElem.classList.add('d-none');
+});
 
 
 // ==== masking
 
-// Не работает с input type number?!?!
-let inputsMask = document.querySelectorAll('input[type="tel"]');
-let im = new Inputmask("+7 (999) 999 99 99");
-
-im.mask(inputsMask);
+Inputmask({
+    // "mask": "999 999 999 999",
+    // "groupSeparator": " ",
+    // "placeholder": " ",
+    // "numericInput": "true",
+}).mask('input[class="price-input"]');
 
 // ====
 
+
+// Сохраняем машины в local storage
+function saveCars() {
+    let newCars = [];
+    newCars = JSON.stringify(cars);
+    localStorage.setItem('carsLocal', newCars);
+}
+// Проверяем local storage
 function checkLocal() {
     let localData = localStorage.getItem('carsLocal');
     if (localData) {
@@ -222,6 +241,7 @@ function checkLocal() {
         tableContElem.classList.remove('d-none');
         dicsElem.classList.remove('d-none');
         noDataElem.classList.add('d-none');
+        createDataTable();
     } else {
         cars = [];
         carId = 0;
@@ -230,7 +250,7 @@ function checkLocal() {
         noDataElem.classList.remove('d-none');
     }
 }
-
+// Парсим дату из local storage
 function parseLocal(data) {
     cars = JSON.parse(data);
     carId = cars[cars.length - 1].carId; // Что бы не прерывалось присваевание id для объектов

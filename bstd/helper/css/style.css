@@ -36,7 +36,6 @@
     --tme-white: #FFFFFF;
     --tme-grey: #282830;
     --tme-red: #FF0022;
-
     --tme-grey-6: #EFF0F0;
     --tme-grey-5: #CECFD0;
     --tme-grey-4: #ADADB0;
@@ -233,7 +232,6 @@ input[type=number] {
     grid-column: span 2;
     grid-row: 2;
 }
-
 .credits-list {
     display: flex;
     justify-content: space-around;
@@ -257,7 +255,6 @@ input[type=number] {
 .credits-list a:hover span {
     color: var(--tme-red);
 }
-
 .field-alert {
     font-size: 0.8rem;
     color: var(--tme-red);
@@ -274,9 +271,20 @@ input[type=number] {
 }
 .data-table {
     width: 100%;
+    max-width: 800px;
     border-collapse: collapse;
     font-size: 0.9rem;
+    table-layout: fixed;
 }
+
+.id-row {width: 5%;}
+.model-row {width: 18%;}
+.price-row {width: 17%;}
+.half-row {width: 17%;}
+.benefit-row {width: 14%;}
+.price-benefit-row {width: 17%;}
+.payment-row {width: 13%;}
+
 .data-table th, .data-table td {
     padding: 0.5em 1em;
 }
@@ -303,15 +311,9 @@ input[type=number] {
 .data-table tbody tr:last-child {
     border-bottom: none;
 }
-.tbody tr::after {
-    /* content: url(.././assets/cross-icon.svg); */
-    /* width: 40px; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-}
 .data-table tbody td {
     border-right: 1px solid var(--tme-grey-5);
+    word-wrap: break-word;
 }
 .data-table tbody tr:nth-child(2n) {
     background-color: var(--tme-grey-6);
@@ -328,7 +330,6 @@ input[type=number] {
 .disc {
     font-size: 0.9rem;‎
 }
-
 
 /* Popup modal Section */
 .popup-overlay {
@@ -364,11 +365,9 @@ input[type=number] {
 .popup .lh-h3-title{
     padding-top: 0rem;
 }
-
 .popup .lh-text {
     margin: 1rem 0rem 1rem 0rem;
 }
-
 
 /* Staff Section */
 .visibility-hidden {visibility: hidden;}

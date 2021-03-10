@@ -31,17 +31,10 @@
 
 <!-- 
     To do:
-    - DONE: Блок когда таблички нет - "I'm sorry, but there is no data available"
-    - DONE: Поп-ап с предупреждением об очистке таблицы
-    - DONE: Нормальный футер, два раздельных в каждую секцию и перенести туда credits и дисклеймер
-    - DONE: Мобильную версию конечно
-    - DONE: Адаптиваня таблица
-    - Поп-ап с инструкцией (?)
     - Проверить форму
     - favicon
-    - meta картинки
+    - meta дата
     - DONE: Блок с дисклеймером (?)
-    - Пасхалку (?)
  -->
 
 <body>
@@ -72,10 +65,7 @@
                         type="number" 
                         name="price" 
                         placeholder="1 000 000" 
-                        required
-                        data-input-mask="currency"
-                        min="499000"
-                        max="20000000">
+                        required>
                 </div>
                 <div class="input-block">
                     <label for="benefit-input">Benefit</label>
@@ -84,9 +74,7 @@
                         class="benefit-input" 
                         type="number" 
                         name="benefit" 
-                        placeholder="100 000"
-                        min="10000"
-                        max="500000">
+                        placeholder="100 000">
                 </div>
                 <div class="btn-collection">
                     <button id="calc-btn" class="btn btn-white calc-btn" >Add</button>
@@ -114,25 +102,17 @@
                 <table id="data-table" class="data-table">
                     <thead>
                         <tr>
-                            <th scope="col" width="2%">Id</th>
-                            <th scope="col" width="18%">Model</th>
-                            <th scope="col" width="18%">Price</th>
-                            <th scope="col" width="16%">Half price</th>
-                            <th scope="col" width="14%">Benefit</th>
-                            <th scope="col" width="18%">Price w/ benefit</th>
-                            <th scope="col" width="13%">Payment&nbsp;*</th>
+                            <th class="id-row" scope="col">Id</th>
+                            <th class="model-row" scope="col">Model</th>
+                            <th class="price-row" scope="col">Price</th>
+                            <th class="half-row" scope="col">Half price</th>
+                            <th class="benefit-row" scope="col">Benefit</th>
+                            <th class="price-benefit-row" scope="col">Price w/ benefit</th>
+                            <th class="payment-row" scope="col">Payment&nbsp;*</th>
                         </tr>
                     </thead>
                     <tbody class="tbody" id="tbody">
-                        <tr>
-                            <td data-label="Id">0</td>
-                            <td data-label="Model">Corolla</td>
-                            <td data-label="Price">1 800 000 р.</td>
-                            <td data-label="Half price">600 000 р.</td>
-                            <td data-label="Benefit">100 000 р.</td>
-                            <td data-label="Price w/ benefit">1 700 000 р.</td>
-                            <td data-label="Payment *">8 900 р.</td>
-                        </tr>
+                        <!-- Сюда собирается табличка из JS -->
                     </tbody>
                 </table>
                 <div class="btn-collection">
